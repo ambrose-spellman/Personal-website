@@ -1,6 +1,6 @@
 :root {
-  --chinese-black-50: #F3F3F3;
-  --chinese-black-100: #DDDDDD;
+  --chinese-black-50: #f3f3f3;
+  --chinese-black-100: #dddddd;
   --chinese-black-500: #868686;
   --chinese-black-600: #727272;
   --chinese-black-700: #5e5e5e;
@@ -11,13 +11,13 @@
   --green-600: #43cd27;
   --green-700: #35b81b;
   --dark-main-green: #102325;
-    --z24: translateZ(24.5px);
-    --z80: translateZ(80px);
-    --ts: all .5s ease;
-    --x90: rotateX(90deg);
-    --xm90: rotateX(-90deg);
-    --y90: rotateY(90deg);
-    --ym90: rotateY(-90deg);
+  --z24: translateZ(24.5px);
+  --z80: translateZ(80px);
+  --ts: all 0.5s ease;
+  --x90: rotateX(90deg);
+  --xm90: rotateX(-90deg);
+  --y90: rotateY(90deg);
+  --ym90: rotateY(-90deg);
 }
 
 body {
@@ -160,11 +160,6 @@ body {
   /* top: 0px;
   right: 57px;
   position: fixed; */
-}
-.menu-toggle.active {
-  /* position: fixed;
-  top: 0;
-  right: 57px; */
 }
 
 .menu-icon {
@@ -460,7 +455,8 @@ body {
   -moz-box-shadow: 0px 0px 15px 0px rgba(92, 99, 102, 0.8);
   box-shadow: 0px 0px 15px 0px rgba(92, 99, 102, 0.8);
 }
-.profile-comment-text p, .pet-projects p {
+.profile-comment-text p,
+.pet-projects p {
   font-size: 16px;
   font-weight: 500;
   line-height: 150%;
@@ -584,11 +580,41 @@ body {
   background-size: cover;
   padding: 80px 0;
 }
+.portfolio-title-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-bottom: 40px;
+  align-items: center;
+}
 .portfolio-title {
   font-size: 36px;
   font-weight: 600;
   color: #ffffffdd;
-  margin-bottom: 40px;
+  margin-bottom: 16px;
+}
+.tab {
+  color: var(--chinese-black-700);
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 150%;
+  border: none;
+  color: white;
+  background: transparent;
+  border-radius: 8px;
+  padding: 8px 16px;
+}
+.tab-header {
+  background: #faebee18;
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  padding: 8px;
+}
+.tab.active {
+  color: var(--chinese-black-700);
+  position: relative;
+  background: #faebee;
 }
 .portfolio-case {
   border-radius: 20px;
@@ -634,6 +660,7 @@ body {
 .portfolio-case-link:hover > .portfolio-case-see-layer {
   opacity: 1;
 }
+
 .yoshopRestaurant {
   background-image: url("../images/YoshopRestuarant.png");
 }
@@ -652,7 +679,12 @@ body {
 .bizexpo {
   background-image: url("../images/BizExpoAsia.png");
 }
-
+.land-preview {
+  background-image: url("../images/landing-previews.png");
+}
+.apps-preview {
+  background-image: url("../images/app-previews.png");
+}
 .portfolio-case-title {
   font-size: 24px;
   font-weight: 600;
@@ -675,6 +707,15 @@ body {
 @media (min-width: 1200px) {
 }
 @media (min-width: 768px) {
+  .portfolio-title {
+    margin-bottom: 0;
+  }
+  .tab {
+    padding: 8px 24px;
+  }
+  .tab-header {
+    padding: 16px;
+  }
   .portfolio-case-link {
     background-size: 90%;
     min-height: 535px;
@@ -683,10 +724,14 @@ body {
   .portfolio-cases-container {
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: space-between;
   }
   .yoShopKiosk {
     background-size: 70%;
     background-position: right 180px;
+  }
+  .portfolio-title-wrapper {
+    flex-direction: row;
   }
 }
 @media (min-width: 320px) and (max-width: 767px) {
@@ -837,7 +882,7 @@ body {
   display: flex;
   flex-direction: column;
   width: 100%;
-  margin-bottom: 40px ;
+  margin-bottom: 40px;
 }
 .resume a {
   width: 100%;
@@ -900,8 +945,8 @@ body {
 }
 .breadcrumbs {
   display: flex;
-  gap:16px ;
-  margin-bottom:40px ;
+  gap: 16px;
+  margin-bottom: 40px;
 }
 
 .breadcrumb-item {
@@ -919,7 +964,7 @@ body {
   cursor: pointer;
   transition: all 1s ease-in-out;
 }
-.breadcrumb-item:last-child::after{
+.breadcrumb-item:last-child::after {
   content: url("../images/arrow-down.svg");
   display: inline-block;
   width: 10px;
@@ -959,7 +1004,7 @@ body {
 .dropdown-item:hover {
   background: rgb(216, 252, 232);
 }
-.dropdown-item:hover a{
+.dropdown-item:hover a {
   color: var(--green-700);
 }
 @keyframes fade-in-left {
@@ -977,9 +1022,6 @@ body {
   margin-top: 40px;
 }
 
-.hobbies {
-
-}
 .hobbies-wrapper {
   display: flex;
   flex-direction: column;
@@ -1015,16 +1057,19 @@ body {
   gap: 4px;
   flex-wrap: wrap;
 }
-@media screen  and (min-width: 768px) {
-.hobbies-wrapper {
-  flex-direction: row;
-  gap: 100px;
+@media screen and (min-width: 768px) {
+  .hobbies-wrapper {
+    flex-direction: row;
+    gap: 100px;
+  }
+  .hobby-case img {
+    max-height: 300px;
+    width: auto;
+  }
+  .hobby-case {
+    width: 45%;
+  }
 }
-.hobby-case img {
-  max-height: 300px;
-  width: auto;
-}
-.hobby-case {
-  width: 45%;
-}
+.landing-pages {
+  display: none;
 }

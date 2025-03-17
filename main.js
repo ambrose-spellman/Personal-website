@@ -156,3 +156,23 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 });
+
+document.querySelectorAll('.tab').forEach(tab => {
+    tab.addEventListener('click', () => {
+      const target = document.querySelector(tab.dataset.tabTarget);
+      
+      // Скрываем все табы
+      document.querySelectorAll('.tab-content').forEach(content => {
+        content.style.display = 'none';
+      });
+      
+      // Убираем активный класс у всех табов
+      document.querySelectorAll('.tab').forEach(t => {
+        t.classList.remove('active');
+      });
+      
+      // Показываем выбранный таб и добавляем активный класс
+      target.style.display = 'block';
+      tab.classList.add('active');
+    });
+  });
