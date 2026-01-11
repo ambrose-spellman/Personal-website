@@ -29,6 +29,7 @@ export default defineConfig({
         'creatego': resolve(__dirname, 'creatego-case.html'),
         'ronto-tech': resolve(__dirname, 'ronto-tech-case.html'),
         'unitradex': resolve(__dirname, 'unitradex-case.html'),
+        'handmade': resolve(__dirname, 'handmade-page.html'),
       },
     },
     minify: 'terser',
