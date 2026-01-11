@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <!-- Favicons -->
+  <link rel="icon" type="image/png" href="/assets/favicon-96x96.png" sizes="96x96" />
+  <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg" />
+  <link rel="shortcut icon" href="/favicon.ico" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon.png" />
+  <link rel="manifest" href="/site.webmanifest" />
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+  
+  <!-- Styles -->
+  <link rel="stylesheet" href="/src/styles/normalize.css" />
+  <link rel="stylesheet" href="/src/styles/grid.css" />
+  <link rel="stylesheet" href="/src/styles/style.css" />
+  
+  <title data-lang="home-page-title">UX/UI designer Saikal Kaparbekova</title>
+  
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-S4SLSBXJSP"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'G-S4SLSBXJSP');
+  </script>
+</head>
+
+<body>
+  {{> header}}
+
+  <main>
+    <div class="container">
+      <div class="hero">
+        <div class="hero_wrapper">
+          <div class="profile-card">
+            <div class="profile-item violet">
+              <h1 data-lang="hi-text">Hi! I am Saikal,</h1>
+            </div>
+            <div class="profile-item pink">
+              <p><span>Ex </span>Frontend</p>
+              <p><span data-lang="im-text-data">Data</span> - <span class="profile-item-dark-text" data-lang="im-text-1">driven</span></p>
+              <p><span data-lang="im-text-usability">Usability</span> - <span class="profile-item-dark-text" data-lang="im-text-1">driven</span></p>
+              <p><span data-lang="im-text-technical">Technical</span> - <span class="profile-item-dark-text" data-lang="im-text-1">driven</span></p>
+            </div>
+            <div class="profile-item green">
+              <p>UX/UI Product <span data-lang="designer">designer</span></p>
+            </div>
+          </div>
+          <div class="profile-photo">
+            <img src="/assets/hero-photo.png" alt="Saikal Kaparbekova" width="400" height="400" loading="eager">
+            <span class="corner1"></span>
+            <span class="corner2"></span>
+            <span class="corner3"></span>
+            <span class="corner4"></span>
+          </div>
+        </div>
+
+        <div class="profile-comment">
+          <div class="profile-comment-circle"></div>
+          <div class="profile-comment-text">
+            <p data-lang="comment-text-2">5 years developing user interfaces, with a 4-year background in front-end
+              development and 2 years in UI/UX design. I focus on creating user-centered experiences for a wide range of products, from business and
+              personal websites to banking, fintech, booking systems, retail, and food no-code instruments.</p>
+            <a href="https://t.me/ambr0se_spellman" target="_blank" data-lang="message-button"
+              class="profile-comment-button">Tap to message</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <section class="portfolio">
+      <div class="container">
+        <div class="portfolio-title-wrapper">
+          <h2 class="portfolio-title" data-lang="portfolio">Portfolio</h2>
+          <div class="tab-header">
+            <button class="tab active" data-tab-target="#main-cases">Main Cases</button>
+            <button class="tab" data-tab-target="#landing-pages">Additional cases</button>
+          </div>
+        </div>
+
+        <div class="tabs">
+          <div class="tab-content active" id="main-cases">
+            <div class="portfolio-cases-container">
+              <a href="/yoshop-restaurant-case.html" class="portfolio-case-link yoshopRestaurant">
+                <span class="portfolio-case-label"></span>
+                <h3 class="portfolio-case-title" data-lang="yoshop-case-title">YoShop Restaurant</h3>
+                <p class="portfolio-case-description" data-lang="yoshop-case-desc">Automation of restaurant business (POS
+                  terminal, monoblock, tablet)</p>
+                <div class="portfolio-case-see-layer">
+                  <span class="portfolio-case-see" data-lang="case-link">Go to project</span>
+                </div>
+              </a>
+
+              <a href="/creatego-case.html" class="portfolio-case-link createGo">
+                <h3 class="portfolio-case-title" data-lang="creatego-case-title">CreateGo</h3>
+                <p class="portfolio-case-description" data-lang="creatego-case-desc">No-code builder for designers</p>
+                <div class="portfolio-case-see-layer">
+                  <span class="portfolio-case-see" data-lang="case-link">Go to project</span>
+                </div>
+              </a>
+
+              <a href="/ronto-tech-case.html" class="portfolio-case-link ronto">
+                <h3 class="portfolio-case-title" data-lang="ronto-case-title">Ronto tech</h3>
+                <p class="portfolio-case-description" data-lang="ronto-case-desc">IT company focused of artificial
+                  intelligence, blockchain, and virtual reality</p>
+                <div class="portfolio-case-see-layer">
+                  <span class="portfolio-case-see" data-lang="case-link">Go to project</span>
+                </div>
+              </a>
+
+              <a href="/yoshop-kiosk.html" class="portfolio-case-link yoShopKiosk">
+                <h3 class="portfolio-case-title" data-lang="yoshop-kiosk-case-title">YoShop Kiosk</h3>
+                <p class="portfolio-case-description" data-lang="yoshop-kiosk-case-desc">Automation of restaurant business
+                  (Kiosk)</p>
+                <div class="portfolio-case-see-layer">
+                  <span class="portfolio-case-see" data-lang="case-link">Go to project</span>
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <div class="tab-content" id="landing-pages" style="display: none;">
+            <div class="portfolio-cases-container">
+              <a target="_blank" class="portfolio-case-link apps-preview"
+                href="https://www.figma.com/design/v5kBYrl3pF11MhVVLsaSax/Mobile-Apps?m=auto&t=P8iZzHbEBqyvWUGi-1">
+                <h3 class="portfolio-case-title" data-lang="mobile-apps-case-title">Mobile apps</h3>
+              </a>
+              <a target="_blank" class="portfolio-case-link land-preview"
+                href="https://www.figma.com/design/7QysYU9Z302zhx89Kdgnj4/Landing-pages?m=auto&t=ybWiwMxfsu5sQmRy-1">
+                <h3 class="portfolio-case-title" data-lang="landings-case-title">Landings</h3>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="pet-projects">
+          <h2 class="portfolio-title" data-lang="portfolio">Pet projects</h2>
+          <div class="portfolio-cases-container">
+            <p>Coming soon...</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  {{> footer}}
+
+  <!-- Main JavaScript -->
+  <script type="module" src="/src/js/main.js"></script>
+</body>
+
+</html>
+
+

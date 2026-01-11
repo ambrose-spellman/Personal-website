@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- Favicons -->
+  <link rel="icon" type="image/png" href="/assets/favicon-96x96.png" sizes="96x96" />
+  <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg" />
+  <link rel="shortcut icon" href="/favicon.ico" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon.png" />
+  <link rel="manifest" href="/site.webmanifest" />
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+  
+  <!-- Styles -->
+  <link rel="stylesheet" href="/src/styles/normalize.css" />
+  <link rel="stylesheet" href="/src/styles/grid.css" />
+  <link rel="stylesheet" href="/src/styles/style.css" />
+  
+  <title>About - Saikal Kaparbekova</title>
+</head>
+
+<body>
+  {{> header}}
+
+  <main>
+    <div class="container">
+      <div class="personal-info">
+        <img src="/assets/about.jpg" alt="About Saikal Kaparbekova" loading="lazy">
+        <div class="personal-info-text">
+          <h3 data-lang="personal-info-title" class="personal-info-title">What I do</h3>
+          <p data-lang="personal-info-desc-1" class="personal-info-desc">I have been designing digital products for two years now, building on my previous four years of experience in developing fintech products and SaaS solutions. This combination allows me to create interfaces that are not only aesthetically pleasing and user-friendly, but also take into account the technical possibilities of implementation.</p>
+          <p data-lang="personal-info-desc-2" class="personal-info-desc">My key strengths are the ability to collaborate with teams, solve complex problems based on data and feedback, and balance user needs with business goals.</p>
+        </div>
+      </div>
+
+      <div class="personal-info">
+        <div class="personal-info-text">
+          <h3 data-lang="personal-info-title-2" class="personal-info-title">Designer with Developer background</h3>
+          <p data-lang="personal-info-desc-3" class="personal-info-desc">As a designer-developer, I create interactive and technically feasible designs that simplify the development process and improve user experience.</p>
+          <p data-lang="personal-info-desc-4" class="personal-info-desc">Understanding the technical aspects I create thoughtful systems that can be easily expanded and adapted to future changes.</p>
+        </div>
+        <img src="/assets/github-profile.png" alt="GitHub Profile" loading="lazy">
+      </div>
+
+      <div>
+        <p class="personal-info-desc" data-lang="download-cv">Click the image below to download my CV 👇</p>
+        <div class="resume">
+          <a href="https://drive.google.com/file/d/11mjiiAk4xOmRt9xvLChaF7pCwTCmVTEB/view?usp=sharing" target="_blank" rel="noopener">
+            <img src="/assets/resume-en.jpg" alt="Resume English" loading="lazy">
+          </a>
+          <a href="https://drive.google.com/file/d/156LXfK-ijpVPcaCsc2O4KtaIMIRNGXhr/view?usp=sharing" target="_blank" rel="noopener">
+            <img src="/assets/resume-ru.jpg" alt="Resume Russian" loading="lazy">
+          </a>
+        </div>
+      </div>
+
+      <div class="hobbies">
+        <h2 class="section-title" data-lang="hobbies">My hobbies</h2>
+        <div class="hobbies-wrapper">
+          <div class="hobby-case">
+            <div class="hobby-title-wrapper">
+              <h4 data-lang="hobby-title-photo" class="hobby-title">Photography</h4>
+              <a href="https://www.instagram.com/your_awesome_portrait/" target="_blank" rel="noopener"
+                data-lang="instagram-profile">Instagram profile</a>
+            </div>
+            <div class="hobby-case-img-wrapper">
+              <img src="/assets/IMG_20231018_182434_623.jpg" alt="Photography" loading="lazy">
+              <img src="/assets/image92.png" alt="Photography" loading="lazy">
+            </div>
+          </div>
+
+          <div class="hobby-case">
+            <h4 data-lang="hobby-title-volley" class="hobby-title">Volleyball</h4>
+            <div class="hobby-case-img-wrapper">
+              <img src="/assets/IMG_20230129_133154_034.jpg" alt="Volleyball" loading="lazy">
+              <img src="/assets/IMG_20230819_161243_581.jpg" alt="Volleyball" loading="lazy">
+            </div>
+          </div>
+
+          <div class="hobby-case">
+            <h4 data-lang="hobby-title-mountain" class="hobby-title">Mountains</h4>
+            <div class="hobby-case-img-wrapper">
+              <img src="/assets/IMG_20240126_092452_439.jpg" alt="Mountains" loading="lazy">
+              <img src="/assets/IMG_20241019_144427_273.jpg" alt="Mountains" loading="lazy">
+            </div>
+          </div>
+
+          <div class="hobby-case">
+            <div class="hobby-title-wrapper">
+              <h4 data-lang="hobby-title-customization" class="hobby-title">DIY/Customization</h4>
+              <a href="/handmade-page.html" target="_blank" rel="noopener"
+              data-lang="more-handmade">See more</a>
+            </div>
+            <div class="hobby-case-img-wrapper">
+              <img src="/assets/scissors.png" alt="DIY" loading="lazy">
+              <img src="/assets/jewelry-green.png" alt="DIY" loading="lazy">
+            </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  {{> footer}}
+
+  <!-- Main JavaScript -->
+  <script type="module" src="/src/js/main.js"></script>
+</body>
+
+</html>
+
+

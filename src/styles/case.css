@@ -1,0 +1,206 @@
+.case-info {
+  display: flex;
+  justify-content: space-between;
+  padding: 40px 0;
+  flex-direction: column;
+}
+
+.left-section {
+  flex: 1;
+  border-bottom: 1px solid var(--border-color);
+  margin-bottom: 20px;
+}
+
+.right-section {
+  flex: 2;
+}
+
+.label {
+  font-size: 14px;
+  color: #888;
+  margin-bottom: 5px;
+}
+.case-content {
+  display: flex;
+  flex-direction: column;
+}
+.content {
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 20px;
+}
+.case-info   {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 40px 20px;
+  width: 100%;
+}
+.lightblue-bg {
+  background: #ebf5ff;
+
+}
+.text-section {
+  flex: 1;
+  margin-right: 20px;
+}
+
+.case-title {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: var(--chinese-black-800);
+  font-weight: 600;
+}
+
+.case-about-description {
+  font-size: 16px;
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.image-section {
+  flex: 1;
+}
+
+.image-section img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.challenge-section {
+  margin-bottom: 30px;
+}
+
+.challenge-item {
+  margin-bottom: 20px;
+}
+
+.challenge-item h3 {
+  font-size: 20px;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+.challenge-item ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.challenge-item ul li {
+  font-size: 16px;
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 5px;
+  font-weight: 500;
+}
+
+.background-blue {
+  background: #0d4e85;
+  padding: 20px 0;
+}
+.background-blue .case-title {
+  color: var(--chinese-black-50);
+}
+.background-blue ul li {
+  color: var(--chinese-black-100);
+}
+.background-blue .text-section {
+  padding: 20px;
+}
+.case-info-list li {
+  position: relative;
+  padding-left: 40px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 150%;
+  margin-bottom: 16px;
+}
+.case-info-list li::before {
+  content: url("/assets/list-icon.svg");
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+@media (min-width: 768px) {
+  .left-section {
+    border-right: 1px solid var(--border-color);
+    border-bottom: none;
+    margin-bottom: 0;
+  }
+  
+
+  .case-title {
+    font-size: 36px;
+  }
+  .case-about-description {
+    font-size: 18px;
+  }
+  .challenge-item h3 {
+    font-size: 20;
+    margin-bottom: 10px;
+  }
+  .challenge-item ul li {
+    font-size: 18px;
+  }
+  .case-info-list li {
+    font-size: 18px;
+  }
+  .content {
+    font-size: 18px;
+  }
+  .background-blue .text-section {
+    padding: 40px;
+  }
+  .label {
+    font-size: 16px;
+    color: #888;
+    margin-bottom: 5px;
+  }
+  .case-info  {
+    flex-direction: row;
+    padding: 80px 40px;
+  }
+  .right-section {
+    padding-left: 20px;
+  }
+}
+
+
+.case-content a {
+  color: #6CACE4;
+  text-decoration: underline;
+  display: inline-block;
+  margin-right: 16px;
+}
+.chinese-black-50 {
+  background: var(--chinese-black-50);
+}
+.block-2 {
+  padding: 40px;
+  display: flex;
+  justify-content: center;
+}
+.screen-images {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+}
+.ronto-logo-block {
+  background: url('/assets/ronto/logo-en.png') no-repeat center center ;
+}
+.ronto-logo-block .case-about-description, .ronto-logo-block .case-title {
+  color: var(--chinese-black-50);
+}
+.ronto-logo-block  img {
+  max-width: 400px;
+}
+@media (min-width: 768px) {
+.screen-images {
+  gap: 80px;
+  padding: 40px 80px;
+}
+}

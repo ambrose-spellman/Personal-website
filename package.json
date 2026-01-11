@@ -1,0 +1,25 @@
+{
+  "name": "saikalkaparbekova-portfolio",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Personal portfolio website for UX/UI designer Saikal Kaparbekova",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "deploy": "npm run build && gh-pages -d dist"
+  },
+  "devDependencies": {
+    "vite": "^5.0.0",
+    "vite-plugin-handlebars": "^2.0.0",
+    "vite-plugin-html": "^3.2.0",
+    "vite-imagetools": "^7.0.2",
+    "gh-pages": "^6.1.0",
+    "sass": "^1.69.5"
+  },
+  "dependencies": {
+    "i18next": "^23.7.6"
+  }
+}
+
+
