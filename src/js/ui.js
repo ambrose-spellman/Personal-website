@@ -17,6 +17,7 @@ export class UIManager {
     this.setupScrollToTop();
     this.setupCopyButton();
     this.setupTabs();
+    this.setupActiveNavigation();
   }
 
   setupMobileMenu() {
@@ -192,6 +193,51 @@ export class UIManager {
         tab.classList.add('active');
       });
     });
+  }
+
+  setupActiveNavigation() {
+    const getCurrentPageName = () => {
+      const path = window.location.pathname;
+      if (path === '/' || path.includes('index.html')) return 'index';
+      if (path.includes('about.html')) return 'about';
+      return null;
+    };
+
+    const setActiveNavLink = () => {
+      const currentPage = getCurrentPageName();
+      if (!currentPage) return;
+
+      // Update hero nav links
+      const heroNavLinks = document.querySelectorAll('.hero-nav-link');
+      heroNavLinks.forEach(link => {
+        const linkPage = link.getAttribute('data-page');
+        if (linkPage === currentPage) {
+          link.classList.add('active');
+        } else {
+          link.classList.remove('active');
+        }
+      });
+
+      // Update header nav links
+      const headerNavLinks = document.querySelectorAll('.nav-link');
+      headerNavLinks.forEach(link => {
+        const href = link.getAttribute('href');
+        if (
+          (currentPage === 'index' && (href === '/index.html' || href === '/')) ||
+          (currentPage === 'about' && href === '/about.html')
+        ) {
+          link.classList.add('active');
+        } else {
+          link.classList.remove('active');
+        }
+      });
+    };
+
+    // Set active navigation on page load
+    setActiveNavLink();
+
+    // Update on navigation
+    window.addEventListener('popstate', setActiveNavLink);
   }
 
   setupDropdown() {
