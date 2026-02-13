@@ -14,180 +14,101 @@
     <link rel="stylesheet" href="/src/styles/grid.css" />
     <link rel="stylesheet" href="/src/styles/style.css" />
     <link rel="stylesheet" href="/src/styles/case.css">
-    <title>Yoshop Kiosk Case</title>
+    <title data-lang="creatego-page-title">CreateGO — Case Study</title>
 </head>
 <body>
     {{> header}}
+
     <div class="container">
-        <ul class="breadcrumbs">
-            <li class="breadcrumb-item" data-lang="breadcrumb-portfolio">
-                Cases studies
-            </li>
-            <li class="breadcrumb-item">/</li>
-            <li class="breadcrumb-item active">
-                <a href="creatego-case.html" class="breadcrumb-item-link" data-lang="breadcrumb-yoshop-creatego">CreateGo</a>
-                <ul class="dropdown">
-                    <li class="dropdown-item"><a href="yoshop-kiosk.html" data-lang="dropdown-yoshop-kiosk">Yoshop Kiosk</a></li>
-                    <!-- <li class="dropdown-item"><a href="" data-lang="dropdown-vixco">Vixco</a></li> -->
-                    <li class="dropdown-item"><a href="yoshop-restaurant-case.html"  data-lang="dropdown-yoshoprestuarant">YoShop Restaurant</a></li>
-                    <li class="dropdown-item"><a href="ronto-tech-case.html" data-lang="dropdown-ronto-tech">Ronto Tech</a></li>
-                    <li class="dropdown-item"><a target="_blank"
-                        href="https://www.figma.com/design/v5kBYrl3pF11MhVVLsaSax/Mobile-Apps?m=auto&t=P8iZzHbEBqyvWUGi-1"
-                        data-lang="dropdown-mobile-apps">Mobile apps
-                    </a><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="20" height="20"
-                        viewBox="0 0 48 48">
-                        <linearGradient id="q17mbB32E_FbIzPpfjq_Ta_W0YEwBDDfTeu_gr1" x1="16.309" x2="23.023"
-                            y1="1.101" y2="19.546" gradientUnits="userSpaceOnUse">
-                            <stop offset="0" stop-color="#f44f5a"></stop>
-                            <stop offset=".443" stop-color="#ee3d4a"></stop>
-                            <stop offset="1" stop-color="#e52030"></stop>
-                        </linearGradient>
-                        <path fill="url(#q17mbB32E_FbIzPpfjq_Ta_W0YEwBDDfTeu_gr1)"
-                            d="M26,17h-8c-3.866,0-7-3.134-7-7v0c0-3.866,3.134-7,7-7h8V17z"></path>
-                        <linearGradient id="q17mbB32E_FbIzPpfjq_Tb_W0YEwBDDfTeu_gr2" x1="15.64" x2="22.314"
-                            y1="14.636" y2="32.971" gradientUnits="userSpaceOnUse">
-                            <stop offset="0" stop-color="#ae4cd5"></stop>
-                            <stop offset="1" stop-color="#9331bf"></stop>
-                        </linearGradient>
-                        <path fill="url(#q17mbB32E_FbIzPpfjq_Tb_W0YEwBDDfTeu_gr2)"
-                            d="M25,31h-7c-3.866,0-7-3.134-7-7v0c0-3.866,3.134-7,7-7h7V31z"></path>
-                        <linearGradient id="q17mbB32E_FbIzPpfjq_Tc_W0YEwBDDfTeu_gr3" x1="14.81" x2="21.821"
-                            y1="26.357" y2="45.617" gradientUnits="userSpaceOnUse">
-                            <stop offset="0" stop-color="#33c481"></stop>
-                            <stop offset="1" stop-color="#21a366"></stop>
-                        </linearGradient>
-                        <path fill="url(#q17mbB32E_FbIzPpfjq_Tc_W0YEwBDDfTeu_gr3)"
-                            d="M18,45L18,45c-3.866,0-7-3.134-7-7v0c0-3.866,3.134-7,7-7h7v7C25,41.866,21.866,45,18,45z">
-                        </path>
-                        <linearGradient id="q17mbB32E_FbIzPpfjq_Td_W0YEwBDDfTeu_gr4" x1="27.498" x2="34.119"
-                            y1=".512" y2="18.702" gradientUnits="userSpaceOnUse">
-                            <stop offset="0" stop-color="#f09ca2"></stop>
-                            <stop offset="1" stop-color="#eb6773"></stop>
-                        </linearGradient>
-                        <path fill="url(#q17mbB32E_FbIzPpfjq_Td_W0YEwBDDfTeu_gr4)"
-                            d="M32,17h-7V3h7c3.866,0,7,3.134,7,7v0C39,13.866,35.866,17,32,17z"></path>
-                        <linearGradient id="q17mbB32E_FbIzPpfjq_Te_W0YEwBDDfTeu_gr5" x1="28.714" x2="34.857"
-                            y1="14.972" y2="31.85" gradientUnits="userSpaceOnUse">
-                            <stop offset="0" stop-color="#32bdef"></stop>
-                            <stop offset="1" stop-color="#1ea2e4"></stop>
-                        </linearGradient>
-                        <circle cx="32" cy="24" r="7" fill="url(#q17mbB32E_FbIzPpfjq_Te_W0YEwBDDfTeu_gr5)"></circle>
-                    </svg>
-                </li>
-                <li class="dropdown-item"><a target="_blank"
-                        href="https://www.figma.com/design/7QysYU9Z302zhx89Kdgnj4/Landing-pages?m=auto&t=ybWiwMxfsu5sQmRy-1"
-                        data-lang="dropdown-landings">Landings
+        <!-- Back Link -->
+        <a href="/index.html" class="case-back-link">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5"/><path d="m12 19-7-7 7-7"/></svg>
+            <span data-lang="case-back">Back to cases</span>
+        </a>
 
-                    </a> <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="20" height="20"
-                        viewBox="0 0 48 48">
-                        <linearGradient id="q17mbB32E_FbIzPpfjq_Ta_W0YEwBDDfTeu_gr1" x1="16.309" x2="23.023"
-                            y1="1.101" y2="19.546" gradientUnits="userSpaceOnUse">
-                            <stop offset="0" stop-color="#f44f5a"></stop>
-                            <stop offset=".443" stop-color="#ee3d4a"></stop>
-                            <stop offset="1" stop-color="#e52030"></stop>
-                        </linearGradient>
-                        <path fill="url(#q17mbB32E_FbIzPpfjq_Ta_W0YEwBDDfTeu_gr1)"
-                            d="M26,17h-8c-3.866,0-7-3.134-7-7v0c0-3.866,3.134-7,7-7h8V17z"></path>
-                        <linearGradient id="q17mbB32E_FbIzPpfjq_Tb_W0YEwBDDfTeu_gr2" x1="15.64" x2="22.314"
-                            y1="14.636" y2="32.971" gradientUnits="userSpaceOnUse">
-                            <stop offset="0" stop-color="#ae4cd5"></stop>
-                            <stop offset="1" stop-color="#9331bf"></stop>
-                        </linearGradient>
-                        <path fill="url(#q17mbB32E_FbIzPpfjq_Tb_W0YEwBDDfTeu_gr2)"
-                            d="M25,31h-7c-3.866,0-7-3.134-7-7v0c0-3.866,3.134-7,7-7h7V31z"></path>
-                        <linearGradient id="q17mbB32E_FbIzPpfjq_Tc_W0YEwBDDfTeu_gr3" x1="14.81" x2="21.821"
-                            y1="26.357" y2="45.617" gradientUnits="userSpaceOnUse">
-                            <stop offset="0" stop-color="#33c481"></stop>
-                            <stop offset="1" stop-color="#21a366"></stop>
-                        </linearGradient>
-                        <path fill="url(#q17mbB32E_FbIzPpfjq_Tc_W0YEwBDDfTeu_gr3)"
-                            d="M18,45L18,45c-3.866,0-7-3.134-7-7v0c0-3.866,3.134-7,7-7h7v7C25,41.866,21.866,45,18,45z">
-                        </path>
-                        <linearGradient id="q17mbB32E_FbIzPpfjq_Td_W0YEwBDDfTeu_gr4" x1="27.498" x2="34.119"
-                            y1=".512" y2="18.702" gradientUnits="userSpaceOnUse">
-                            <stop offset="0" stop-color="#f09ca2"></stop>
-                            <stop offset="1" stop-color="#eb6773"></stop>
-                        </linearGradient>
-                        <path fill="url(#q17mbB32E_FbIzPpfjq_Td_W0YEwBDDfTeu_gr4)"
-                            d="M32,17h-7V3h7c3.866,0,7,3.134,7,7v0C39,13.866,35.866,17,32,17z"></path>
-                        <linearGradient id="q17mbB32E_FbIzPpfjq_Te_W0YEwBDDfTeu_gr5" x1="28.714" x2="34.857"
-                            y1="14.972" y2="31.85" gradientUnits="userSpaceOnUse">
-                            <stop offset="0" stop-color="#32bdef"></stop>
-                            <stop offset="1" stop-color="#1ea2e4"></stop>
-                        </linearGradient>
-                        <circle cx="32" cy="24" r="7" fill="url(#q17mbB32E_FbIzPpfjq_Te_W0YEwBDDfTeu_gr5)"></circle>
-                    </svg>
-                </li>
-                </ul>
-            </li>
-        </ul>
-        <div class="case-content">
-            <div class="case-info">
-                <div class="left-section">
-                    <div>
-                        <div class="label" data-lang="case-info-role">Role</div>
-                        <div class="content" data-lang="case-info-role-content">UX/UI Designer</div>
-                    </div>
-                    <div>
-                        <div class="label" data-lang="case-info-industry">Industry</div>
-                        <div class="content" data-lang="case-info-industry-content">Startups, No code instruments</div>
-                    </div>
-                    <div>
-                        <div class="label" data-lang="case-info-project">Project</div>
-                        <div class="content" data-lang="case-info-project-content">Web App</div>
-                    </div>
-
-                </div>
-                <div class="right-section">
-                    <div class="label" data-lang="case-info-business-challenge">Business challenge</div>
-                    <div class="content" data-lang="creatego-business-challenge-content">
-                        Ключевая цель - стать ключевым инструментом для дизайнеров, предоставляя им широкие
-                        возможности для построения полноценных приложений через визуальный интерфейс и готовые
-                        компоненты.
-                    </div>
-
+        <!-- Block 1: Hero -->
+        <section class="case-hero" data-analytics="hero">
+            <img src="/assets/creatego/block-1.jpg" alt="CreateGO — No-code builder for designers" class="case-hero-image">
+            <div class="case-hero-overlay">
+                <h1 class="case-hero-title" data-lang="creatego-hero-title">CreateGO</h1>
+                <p class="case-hero-subtitle" data-lang="creatego-hero-subtitle">No-code builder that empowers designers to build production-ready apps through visual interface</p>
+                <div class="case-tags">
+                    <span class="case-tag">SaaS</span>
+                    <span class="case-tag">No-code</span>
+                    <span class="case-tag">Web App</span>
+                    <span class="case-tag">Startup</span>
                 </div>
             </div>
-            <div class="chinese-black-50 screen-images">
-                <img src="/assets/creatego/block-1.jpg" alt="CreateGo block 1" loading="lazy">
-            </div>
-            <div class="case-info">
-                <div class="left-section">
-                    <h2 class="case-title" data-lang="case-about-title">About Project</h2>
-                </div>
-                <div class="right-section">
+        </section>
 
-                   <p data-lang="creatego-case-about-description"  class="case-about-description">CreateGo - offers an intuitive builder with the ability to import layouts from Figma, automating routine tasks and allowing designers to quickly assemble prototypes and MVPs without the need for programming knowledge.</p>
+        <!-- Block 2: Results -->
+        <section class="case-results" data-analytics="results">
+            <h2 class="case-results-title" data-lang="case-results-heading">Key Results</h2>
+            <div class="case-results-grid">
+                <div class="case-result-card">
+                    <h3 class="result-label" data-lang="case-problem">Problem</h3>
+                    <p class="result-value" data-lang="creatego-problem">Designers depend on developers to turn prototypes into working apps, slowing down the launch cycle</p>
                 </div>
-
-            </div>
-           
-            <div class="chinese-black-50 screen-images">
-                <img src="/assets/creatego/Create&GoHomepage.jpg" alt="CreateGo Homepage" loading="lazy">
-            </div>
-            <div class="chinese-black-50 screen-images">
-                <img src="/assets/creatego/block-2.png" alt="CreateGo block 2" loading="lazy">
-                <img src="/assets/creatego/block-3.png" alt="CreateGo block 3" loading="lazy">
-                <img src="/assets/creatego/block-4.png" alt="CreateGo block 4" loading="lazy">
-                <img src="/assets/creatego/block-5.png" alt="CreateGo block 5" loading="lazy">
-                <img src="/assets/creatego/block-6.png" alt="CreateGo block 6" loading="lazy">
-                <img src="/assets/creatego/block-7.png" alt="CreateGo block 7" loading="lazy">
-
-            </div>
-            <div class="case-info">
-                <div class="left-section">
-                    <h2 class="case-title" data-lang="case-about-title">UI Elements</h2>
+                <div class="case-result-card">
+                    <h3 class="result-label" data-lang="case-solution">Solution</h3>
+                    <p class="result-value" data-lang="creatego-solution">Visual builder with Figma import, allowing designers to assemble MVPs without coding knowledge</p>
                 </div>
-                <div class="right-section">
-                   <p data-lang="creatego-ui-description" class="case-about-description">UI elements based on design  system Xela, contrast with white and blue</p>
+                <div class="case-result-card">
+                    <h3 class="result-label" data-lang="case-metrics">Metrics</h3>
+                    <p class="result-value" data-lang="creatego-metrics">Placeholder — add your metrics here</p>
                 </div>
+                <div class="case-result-card">
+                    <h3 class="result-label" data-lang="case-skills">Skills Applied</h3>
+                    <p class="result-value" data-lang="creatego-skills">UI/UX Design, Design System, Prototyping, User Research</p>
+                </div>
+            </div>
+        </section>
 
+        <!-- Block 3: Tools & Team -->
+        <section class="case-tools-team" data-analytics="tools">
+            <div class="case-tools">
+                <h2 class="case-section-title" data-lang="case-tools">Tools</h2>
+                <div class="tool-icons">
+                    <span class="tool-item">Figma</span>
+                    <span class="tool-item">Xela UI</span>
+                    <span class="tool-item">Prototyping</span>
+                </div>
             </div>
-            <div class="chinese-black-50 screen-images">
-                <img src="/assets/creatego/UIel.png" alt="CreateGo UI Elements" loading="lazy">
+            <div class="case-team">
+                <h2 class="case-section-title" data-lang="case-team">Team</h2>
+                <p data-lang="creatego-team">Placeholder — describe team composition here</p>
             </div>
-        </div>
+        </section>
+
+        <!-- Block 4: Design Gallery -->
+        <section class="case-gallery" data-analytics="gallery">
+            <h2 class="case-gallery-title" data-lang="case-design">Design</h2>
+            <img src="/assets/creatego/Create&GoHomepage.jpg" alt="CreateGo Homepage" loading="lazy">
+            <img src="/assets/creatego/block-2.png" alt="CreateGo Dashboard" loading="lazy">
+            <img src="/assets/creatego/block-3.png" alt="CreateGo Components" loading="lazy">
+            <img src="/assets/creatego/block-4.png" alt="CreateGo Editor" loading="lazy">
+            <img src="/assets/creatego/block-5.png" alt="CreateGo Templates" loading="lazy">
+            <img src="/assets/creatego/block-6.png" alt="CreateGo Layouts" loading="lazy">
+            <img src="/assets/creatego/block-7.png" alt="CreateGo Export" loading="lazy">
+            <img src="/assets/creatego/UIel.png" alt="CreateGo UI Elements — Xela Design System" loading="lazy">
+        </section>
+
+        <!-- Block 5: Description -->
+        <section class="case-description" data-analytics="description">
+            <h2 class="case-description-title" data-lang="case-about-title">About Project</h2>
+            <div>
+                <p class="case-description-text" data-lang="creatego-case-about-description">CreateGo offers an intuitive builder with the ability to import layouts from Figma, automating routine tasks and allowing designers to quickly assemble prototypes and MVPs without the need for programming knowledge.</p>
+                <p class="case-description-text" style="margin-top: 16px;" data-lang="creatego-ui-description">UI elements based on design system Xela, with contrast white and blue palette for clear visual hierarchy.</p>
+            </div>
+        </section>
+
+        <!-- Block 6: Related Cases -->
+        <section class="case-related" data-analytics="related">
+            <h2 class="case-related-title" data-lang="case-related">Related Projects</h2>
+            <div class="related-cases-grid" id="related-cases" data-current="creatego"></div>
+        </section>
     </div>
+
     {{> footer}}
     <script type="module" src="/src/js/main.js"></script>
 </body>

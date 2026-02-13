@@ -14,24 +14,91 @@
     <link rel="stylesheet" href="/src/styles/grid.css" />
     <link rel="stylesheet" href="/src/styles/style.css" />
     <link rel="stylesheet" href="/src/styles/case.css">
-    <title>Yoshop Kiosk Case</title>
+    <title data-lang="kiosk-page-title">YoShop Kiosk — Case Study</title>
 </head>
-
 <body>
     {{> header}}
-    
+
     <div class="container">
-        <p style="text-align: center; padding: 40px; font-size: 18px;">
-            🚧 Эта страница будет мигрирована в следующей итерации. 
-            <br><br>
-            Для просмотра полной версии посетите: 
-            <a href="/saikalkaparbekova.me/yoshop-kiosk.html" style="color: #35b81b;">старую версию</a>
-        </p>
+        <!-- Back Link -->
+        <a href="/index.html" class="case-back-link">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5"/><path d="m12 19-7-7 7-7"/></svg>
+            <span data-lang="case-back">Back to cases</span>
+        </a>
+
+        <!-- Block 1: Hero -->
+        <section class="case-hero" data-analytics="hero">
+            <img src="/assets/Kiosk.png" alt="YoShop Kiosk — Self-service restaurant kiosk" class="case-hero-image">
+            <div class="case-hero-overlay">
+                <h1 class="case-hero-title" data-lang="kiosk-hero-title">YoShop Kiosk</h1>
+                <p class="case-hero-subtitle" data-lang="kiosk-hero-subtitle">Self-service kiosk interface for restaurant order automation</p>
+                <div class="case-tags">
+                    <span class="case-tag">Restaurant</span>
+                    <span class="case-tag">Kiosk</span>
+                    <span class="case-tag">Fintech</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Block 2: Results -->
+        <section class="case-results" data-analytics="results">
+            <h2 class="case-results-title" data-lang="case-results-heading">Key Results</h2>
+            <div class="case-results-grid">
+                <div class="case-result-card">
+                    <h3 class="result-label" data-lang="case-problem">Problem</h3>
+                    <p class="result-value" data-lang="kiosk-problem">Placeholder — describe the problem here</p>
+                </div>
+                <div class="case-result-card">
+                    <h3 class="result-label" data-lang="case-solution">Solution</h3>
+                    <p class="result-value" data-lang="kiosk-solution">Placeholder — describe the solution here</p>
+                </div>
+                <div class="case-result-card">
+                    <h3 class="result-label" data-lang="case-metrics">Metrics</h3>
+                    <p class="result-value" data-lang="kiosk-metrics">Placeholder — add your metrics here</p>
+                </div>
+                <div class="case-result-card">
+                    <h3 class="result-label" data-lang="case-skills">Skills Applied</h3>
+                    <p class="result-value" data-lang="kiosk-skills">Placeholder — list skills here</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Block 3: Tools & Team -->
+        <section class="case-tools-team" data-analytics="tools">
+            <div class="case-tools">
+                <h2 class="case-section-title" data-lang="case-tools">Tools</h2>
+                <div class="tool-icons">
+                    <span class="tool-item">Figma</span>
+                    <span class="tool-item">Prototyping</span>
+                </div>
+            </div>
+            <div class="case-team">
+                <h2 class="case-section-title" data-lang="case-team">Team</h2>
+                <p data-lang="kiosk-team">Placeholder — describe team composition here</p>
+            </div>
+        </section>
+
+        <!-- Block 4: Design Gallery -->
+        <section class="case-gallery" data-analytics="gallery">
+            <h2 class="case-gallery-title" data-lang="case-design">Design</h2>
+            <!-- Replace with actual design screenshots -->
+            <img src="/assets/Kiosk.png" alt="YoShop Kiosk interface" loading="lazy">
+        </section>
+
+        <!-- Block 5: Description -->
+        <section class="case-description" data-analytics="description">
+            <h2 class="case-description-title" data-lang="case-about-title">About Project</h2>
+            <p class="case-description-text" data-lang="kiosk-case-about-description">Placeholder — add full project description here. Describe the self-service kiosk, its role in restaurant automation, and the UX decisions made.</p>
+        </section>
+
+        <!-- Block 6: Related Cases -->
+        <section class="case-related" data-analytics="related">
+            <h2 class="case-related-title" data-lang="case-related">Related Projects</h2>
+            <div class="related-cases-grid" id="related-cases" data-current="yoshop-kiosk"></div>
+        </section>
     </div>
-    
+
     {{> footer}}
     <script type="module" src="/src/js/main.js"></script>
 </body>
 </html>
-
-
