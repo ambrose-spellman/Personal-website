@@ -145,7 +145,7 @@
 }
 
 .case-section-title {
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 600;
   color: var(--chinese-black-800);
   margin: 0 0 16px;
@@ -356,6 +356,10 @@
   .case-description-title,
   .case-related-title {
     font-size: 28px;
+  }
+
+  .case-section-title {
+    font-size: 20px;
   }
 
   .case-tools-team {

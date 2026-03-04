@@ -584,6 +584,9 @@ body {
   opacity: 1;
 }
 
+.unitradex {
+  background-image: url("/assets/b2b-distribution/dashboard2.jpeg");
+}
 .yoshopRestaurant {
   background-image: url("/assets/YoshopRestuarant.png");
 }
@@ -817,14 +820,16 @@ body {
     object-fit: cover;
   }
   .personal-info-title {
-    /* margin-bottom: 80px; */
+    font-size: 36px;
+  }
+  .section-title {
     font-size: 36px;
   }
   .personal-info-text {
     width: 45%;
   }
   .personal-info-desc {
-    font-size: 20px;
+    font-size: 18px;
   }
   /* resume */
   .resume {
@@ -842,7 +847,7 @@ body {
   }
 }
 .section-title {
-  font-size: 36px;
+  font-size: 24px;
   font-weight: 600;
   color: var(--chinese-black-800);
   margin-bottom: 40px;
@@ -926,11 +931,9 @@ body {
 }
 
 .hobbies-wrapper {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  gap: 36px;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 40px;
 }
 .hobby-case {
   width: 100%;
@@ -943,34 +946,36 @@ body {
   width: 100%;
 }
 .hobby-title {
-  font-size: 24px;
+  font-size: 20px;
   font-weight: 600;
-  margin-bottom: 20px;
+  margin-bottom: 16px;
 }
 .hobby-case a {
   color: #339cff;
   display: inline-block;
-  margin-bottom: 20px;
-}
-.hobby-case img {
-  border-radius: 16px;
+  margin-bottom: 16px;
 }
 .hobby-case-img-wrapper {
-  display: flex;
-  gap: 4px;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+}
+.hobby-case-img-wrapper img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 12px;
 }
 @media screen and (min-width: 768px) {
   .hobbies-wrapper {
-    flex-direction: row;
-    gap: 100px;
+    grid-template-columns: 1fr 1fr;
+    gap: 48px;
   }
-  .hobby-case img {
-    max-height: 300px;
-    width: auto;
+  .hobby-title {
+    font-size: 22px;
   }
-  .hobby-case {
-    width: 45%;
+  .hobby-case-img-wrapper img {
+    height: 240px;
   }
 }
 .portfolio-title-wrapper {
