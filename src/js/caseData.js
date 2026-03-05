@@ -17,19 +17,19 @@ export const cases = {
     role: 'UX/UI Designer',
   },
   'yoshop-restaurant': {
-    title: { en: 'YoShop Restaurant', ru: 'YoShop Restaurant' },
-    description: { en: 'Restaurant business automation (POS, monoblock, tablet)', ru: 'Автоматизация ресторанного бизнеса (POS, моноблок, планшет)' },
-    tags: ['restaurant', 'fintech', 'POS', 'web-app'],
+    title: { en: 'YoShop', ru: 'YoShop' },
+    description: { en: 'POS and inventory system — retail stores, restaurants, 3 platforms', ru: 'POS-система и учёт товаров — магазины, рестораны, 3 платформы' },
+    tags: ['retail', 'restaurant', 'fintech', 'POS', 'web-app'],
     url: '/yoshop-restaurant-case.html',
-    thumbnail: '/assets/YoshopRestuarant.png',
+    thumbnail: '/assets/yoshop/yoshopCase.png',
     role: 'UX/UI Designer',
   },
-  'yoshop-kiosk': {
-    title: { en: 'YoShop Kiosk', ru: 'YoShop Kiosk' },
-    description: { en: 'Restaurant business automation (Kiosk)', ru: 'Автоматизация ресторанного бизнеса (Киоск)' },
-    tags: ['restaurant', 'kiosk', 'fintech'],
-    url: '/yoshop-kiosk.html',
-    thumbnail: '/assets/Kiosk.png',
+  'geon': {
+    title: { en: 'G-Eon', ru: 'G-Eon' },
+    description: { en: 'Mobile streaming platform — live streams, AR, wallet, tournaments', ru: 'Мобильная стриминговая платформа — прямые эфиры, AR, кошелёк, турниры' },
+    tags: ['mobile', 'streaming', 'startup', 'AR', 'iOS', 'Android'],
+    url: '/g-eon-case.html',
+    thumbnail: '/assets/geon/geon1.png',
     role: 'UX/UI Designer',
   },
 };
@@ -83,5 +83,10 @@ export function renderRelatedCases(currentSlug, lang = 'en') {
     </a>
   `).join('');
 
-  container.innerHTML = html;
+  const grid = container.querySelector('.related-cases-grid');
+  if (grid) {
+    grid.innerHTML = html;
+  } else {
+    container.innerHTML = `<div class="related-cases-grid">${html}</div>`;
+  }
 }

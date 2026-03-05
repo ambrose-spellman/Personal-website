@@ -7,6 +7,7 @@
     <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg" />
     <link rel="shortcut icon" href="/favicon.ico" />
     <link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon.png" />
+    <link rel="manifest" href="/site.webmanifest" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
@@ -14,88 +15,165 @@
     <link rel="stylesheet" href="/src/styles/grid.css" />
     <link rel="stylesheet" href="/src/styles/style.css" />
     <link rel="stylesheet" href="/src/styles/case.css">
-    <title data-lang="yoshop-page-title">YoShop Restaurant — Case Study</title>
+    <title data-lang="yoshop-page-title">YoShop - Case Study</title>
 </head>
 <body>
     {{> header}}
 
     <div class="container">
-        <!-- Back Link -->
         <a href="/index.html" class="case-back-link">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5"/><path d="m12 19-7-7 7-7"/></svg>
             <span data-lang="case-back">Back to cases</span>
         </a>
 
-        <!-- Block 1: Hero -->
+        <!-- Hero -->
         <section class="case-hero" data-analytics="hero">
-            <img src="/assets/YoshopRestuarant.png" alt="YoShop Restaurant — POS system for restaurants" class="case-hero-image">
+            <img src="/assets/yoshop/yoshopCase.png" alt="YoShop - multi-platform POS and inventory system" class="case-hero-image">
             <div class="case-hero-overlay">
-                <h1 class="case-hero-title" data-lang="yoshop-hero-title">YoShop Restaurant</h1>
-                <p class="case-hero-subtitle" data-lang="yoshop-hero-subtitle">End-to-end restaurant automation system: POS terminal, monoblock, and tablet interfaces</p>
+                <h1 class="case-hero-title" data-lang="yoshop-hero-title">YoShop</h1>
+                <p class="case-hero-subtitle" data-lang="yoshop-hero-subtitle">Multi-platform POS and inventory system for restaurants and retail stores</p>
                 <div class="case-tags">
+                    <span class="case-tag">Retail</span>
                     <span class="case-tag">Restaurant</span>
-                    <span class="case-tag">Fintech</span>
                     <span class="case-tag">POS</span>
-                    <span class="case-tag">Web App</span>
+                    <span class="case-tag">Desktop</span>
+                    <span class="case-tag">Tablet</span>
+                    <span class="case-tag">Android</span>
                 </div>
             </div>
         </section>
 
-        <!-- Block 2: Results -->
+        <!-- Key Results -->
         <section class="case-results" data-analytics="results">
             <h2 class="case-results-title" data-lang="case-results-heading">Key Results</h2>
             <div class="case-results-grid">
                 <div class="case-result-card">
-                    <h3 class="result-label" data-lang="case-problem">Problem</h3>
-                    <p class="result-value" data-lang="yoshop-problem">Placeholder — describe the problem here</p>
+                    <h3 class="result-label" data-lang="yoshop-result-platforms-label">Platforms</h3>
+                    <p class="result-value" data-lang="yoshop-result-platforms">3 platforms: Desktop monoblock, Android POS terminal, Tablet (restaurant)</p>
                 </div>
                 <div class="case-result-card">
-                    <h3 class="result-label" data-lang="case-solution">Solution</h3>
-                    <p class="result-value" data-lang="yoshop-solution">Placeholder — describe the solution here</p>
+                    <h3 class="result-label" data-lang="yoshop-result-role-label">My role</h3>
+                    <p class="result-value" data-lang="yoshop-result-role">UX/UI Designer - warehouse module, product creation, catalog design</p>
                 </div>
                 <div class="case-result-card">
-                    <h3 class="result-label" data-lang="case-metrics">Metrics</h3>
-                    <p class="result-value" data-lang="yoshop-metrics">Placeholder — add your metrics here</p>
+                    <h3 class="result-label" data-lang="yoshop-result-team-label">Team</h3>
+                    <p class="result-value" data-lang="yoshop-result-team-value">3 designers · 1 product owner · 5-6 developers · 2 QA testers</p>
                 </div>
                 <div class="case-result-card">
-                    <h3 class="result-label" data-lang="case-skills">Skills Applied</h3>
-                    <p class="result-value" data-lang="yoshop-skills">Placeholder — list skills here</p>
+                    <h3 class="result-label" data-lang="yoshop-result-company-label">Company</h3>
+                    <p class="result-value" data-lang="yoshop-result-company">Finenex (Korea) - product built for the Kazakhstan market</p>
                 </div>
             </div>
         </section>
 
-        <!-- Block 3: Tools & Team -->
+        <!-- Tools & Team -->
         <section class="case-tools-team" data-analytics="tools">
             <div class="case-tools">
                 <h2 class="case-section-title" data-lang="case-tools">Tools</h2>
                 <div class="tool-icons">
                     <span class="tool-item">Figma</span>
+                    <span class="tool-item">Google Docs</span>
+                    <span class="tool-item">Google Sheets</span>
+                    <span class="tool-item">Manual testing</span>
                     <span class="tool-item">Prototyping</span>
                 </div>
             </div>
-            <div class="case-team">
-                <h2 class="case-section-title" data-lang="case-team">Team</h2>
-                <p data-lang="yoshop-team">Placeholder — describe team composition here</p>
+        </section>
+
+        <!-- Challenge -->
+        <section class="case-description" data-analytics="challenge">
+            <h2 class="case-description-title" data-lang="yoshop-challenge-title">The Challenge</h2>
+            <div>
+                <p class="case-description-text" data-lang="yoshop-challenge-text">The core challenge was designing a consistent experience across 3 different form factors - monoblocks, Android POS terminals, and tablets - while sharing the same module logic: warehouse, shifts, sales, and reports. Each device had its own constraints and user scenarios that required platform-specific adaptations.</p>
+                <p class="case-description-text" data-lang="yoshop-challenge-clothing" style="margin-top:16px">A major pain point was the warehouse module for clothing stores: staff had to scroll through a long, unfiltered list to find stock by size and model. With hundreds of SKUs and multiple size variants per item, daily inventory work was extremely slow. Product creation was equally fragmented - no way to reuse configurations for similar items.</p>
             </div>
         </section>
 
-        <!-- Block 4: Design Gallery -->
-        <section class="case-gallery" data-analytics="gallery">
-            <h2 class="case-gallery-title" data-lang="case-design">Design</h2>
-            <!-- Replace with actual design screenshots -->
-            <img src="/assets/YoshopRestuarant.png" alt="YoShop Restaurant interface" loading="lazy">
+        <!-- Solution -->
+        <section class="case-description" data-analytics="solution">
+            <h2 class="case-description-title" data-lang="yoshop-solution-title">The Solution</h2>
+            <div>
+                <p class="case-description-text" data-lang="yoshop-solution-warehouse">Redesigned the warehouse balance view from a flat list into a cross-filter table - staff can now browse stock by any combination of parameters: category, size, color, supplier. Finding and verifying SKU balances became fast and intuitive.</p>
+                <p class="case-description-text" data-lang="yoshop-solution-templates" style="margin-top:16px">Designed a 3-type product creation system: simple product, composite bundle (for promotions with multiple items), and template. The template feature lets staff save any product configuration and reuse it - significantly speeding up catalog management for stores with recurring seasonal assortments.</p>
+            </div>
         </section>
 
-        <!-- Block 5: Description -->
-        <section class="case-description" data-analytics="description">
-            <h2 class="case-description-title" data-lang="case-about-title">About Project</h2>
-            <p class="case-description-text" data-lang="yoshop-case-about-description">Placeholder — add full project description here. Describe the restaurant automation system, the POS terminal, monoblock interface, and tablet application.</p>
+        <!-- Process -->
+        <section class="case-description" data-analytics="process">
+            <h2 class="case-description-title" data-lang="yoshop-process-title">The Process</h2>
+            <div>
+                <p class="case-description-text" data-lang="yoshop-process-text">Worked remotely with Finenex (Korea) as 1 of 3 designers, alongside a product owner, 5-6 developers, and 2 QA testers. Used Figma for all design work, Google Docs and Sheets for specs and documentation. Conducted manual testing on real devices - POS terminals, tablets, and monoblocks - to validate interaction patterns and catch edge cases. Researched American and global analogues to benchmark best practices.</p>
+            </div>
         </section>
 
-        <!-- Block 6: Related Cases -->
-        <section class="case-related" data-analytics="related">
+        <!-- Gallery: Restaurant -->
+        <section class="case-gallery" data-analytics="gallery-restaurant">
+            <h2 class="case-gallery-title" data-lang="yoshop-gallery-restaurant">Restaurant Interface</h2>
+            <img src="/assets/yoshop/YoShopRestaurant1.png" alt="YoShop Restaurant - main interface" loading="lazy">
+            <img src="/assets/yoshop/YoShopRestaurant2.png" alt="YoShop Restaurant - order flow" loading="lazy">
+            <img src="/assets/yoshop/YoShopRestaurant3.png" alt="YoShop Restaurant - menu management" loading="lazy">
+            <img src="/assets/yoshop/YoShopRestaurant4.png" alt="YoShop Restaurant - shift management" loading="lazy">
+            <img src="/assets/yoshop/YoShopRestaurant5.png" alt="YoShop Restaurant - reports" loading="lazy">
+            <img src="/assets/yoshop/YoShopRestaurant6.png" alt="YoShop Restaurant - warehouse" loading="lazy">
+            <img src="/assets/yoshop/YoShopRestaurant7.png" alt="YoShop Restaurant - settings" loading="lazy">
+        </section>
+
+        <!-- Gallery: Retail -->
+        <section class="case-gallery" data-analytics="gallery-retail">
+            <h2 class="case-gallery-title" data-lang="yoshop-gallery-retail">Retail Interface</h2>
+            <img src="/assets/yoshop/YoshopRetail_Screen1.png" alt="YoShop Retail - main interface" loading="lazy">
+            <img src="/assets/yoshop/YoshopRetail_Screen2.png" alt="YoShop Retail - warehouse module" loading="lazy">
+            <img src="/assets/yoshop/YoshopRetail_Screen3.png" alt="YoShop Retail - inventory balance" loading="lazy">
+            <img src="/assets/yoshop/YoshopRetail_Screen4.png" alt="YoShop Retail - product catalog" loading="lazy">
+            <img src="/assets/yoshop/YoshopRetail_Screen5.png" alt="YoShop Retail - product creation" loading="lazy">
+            <img src="/assets/yoshop/YoshopRetail_Screen6.png" alt="YoShop Retail - sales module" loading="lazy">
+            <img src="/assets/yoshop/YoshopRetail_Screen7.png" alt="YoShop Retail - shift management" loading="lazy">
+            <img src="/assets/yoshop/YoshopRetail_Screen8.png" alt="YoShop Retail - reports" loading="lazy">
+            <img src="/assets/yoshop/YoshopRetail_Screen9.png" alt="YoShop Retail - clothing size grid" loading="lazy">
+            <img src="/assets/yoshop/YoshopRetail_Screen10.png" alt="YoShop Retail - filter view" loading="lazy">
+        </section>
+
+        <!-- Related Cases -->
+        <section class="case-related" data-analytics="related" id="related-cases" data-current="yoshop-restaurant">
             <h2 class="case-related-title" data-lang="case-related">Related Projects</h2>
-            <div class="related-cases-grid" id="related-cases" data-current="yoshop-restaurant"></div>
+            <div class="related-cases-grid">
+                <a href="/unitradex-case.html" class="related-case-card" data-case-slug="unitradex">
+                    <div class="related-case-thumbnail">
+                        <img src="/assets/b2b-distribution/dashboard1.jpeg" alt="UniTradex" loading="lazy">
+                    </div>
+                    <div class="related-case-info">
+                        <h3 class="related-case-title" data-lang="unitradex-case-title">UniTradex</h3>
+                        <p class="related-case-description" data-lang="unitradex-case-desc">B2B distribution platform</p>
+                        <div class="related-case-tags">
+                            <span class="case-tag">B2B</span><span class="case-tag">Web App</span>
+                        </div>
+                    </div>
+                </a>
+                <a href="/creatego-case.html" class="related-case-card" data-case-slug="creatego">
+                    <div class="related-case-thumbnail">
+                        <img src="/assets/Creatego.png" alt="CreateGO" loading="lazy">
+                    </div>
+                    <div class="related-case-info">
+                        <h3 class="related-case-title" data-lang="creatego-case-title">CreateGO</h3>
+                        <p class="related-case-description" data-lang="creatego-case-desc">No-code builder for designers</p>
+                        <div class="related-case-tags">
+                            <span class="case-tag">No-code</span><span class="case-tag">Web App</span>
+                        </div>
+                    </div>
+                </a>
+                <a href="/ronto-tech-case.html" class="related-case-card" data-case-slug="ronto">
+                    <div class="related-case-thumbnail">
+                        <img src="/assets/Ronto.png" alt="Ronto Tech" loading="lazy">
+                    </div>
+                    <div class="related-case-info">
+                        <h3 class="related-case-title" data-lang="ronto-case-title">Ronto Tech</h3>
+                        <p class="related-case-description" data-lang="ronto-case-desc">IT company - AI, blockchain, and AR</p>
+                        <div class="related-case-tags">
+                            <span class="case-tag">Branding</span><span class="case-tag">Web</span>
+                        </div>
+                    </div>
+                </a>
+            </div>
         </section>
     </div>
 

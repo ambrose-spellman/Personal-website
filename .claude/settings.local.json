@@ -1,0 +1,10 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python3 -c \":*)",
+      "Bash(powershell -Command \":*)",
+      "Bash(powershell -Command \"\\(Get-Content ''c:/Users/Saikal/Desktop/Personal website/unitradex-case.html''\\).Count\")",
+      "Bash(ls \"c:/Users/Saikal/Desktop/Personal website/public/assets/b2b distribution&shops/\")"
+    ]
+  }
+}

@@ -25,7 +25,7 @@
 /* ====== BLOCK 1: CASE HERO ====== */
 .case-hero {
   position: relative;
-  min-height: min(700px, 85vh);
+  min-height: min(360px, 50vh);
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -39,6 +39,7 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
+  object-position: top;
   position: absolute;
   top: 0;
   left: 0;
@@ -49,7 +50,7 @@
   position: relative;
   z-index: 2;
   padding: 32px 24px;
-  background: linear-gradient(to top, rgba(0, 0, 0, 0.7) 0%, transparent 100%);
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.88) 0%, rgba(0, 0, 0, 0.7) 45%, transparent 75%);
 }
 
 .case-hero-title {
@@ -167,6 +168,7 @@
   font-size: 14px;
   font-weight: 500;
   color: var(--chinese-black-700);
+  flex: 0 0 auto;
 }
 
 .case-team p {
@@ -328,7 +330,7 @@
 /* ====== RESPONSIVE: TABLET+ ====== */
 @media (min-width: 768px) {
   .case-hero {
-    min-height: min(700px, 80vh);
+    min-height: min(360px, 45vh);
   }
 
   .case-hero-overlay {
@@ -415,10 +417,6 @@
 
 /* ====== RESPONSIVE: DESKTOP ====== */
 @media (min-width: 1024px) {
-  .case-results-grid {
-    grid-template-columns: repeat(4, 1fr);
-  }
-
   .case-result-card {
     padding: 32px;
   }

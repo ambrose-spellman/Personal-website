@@ -7,6 +7,7 @@
     <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg" />
     <link rel="shortcut icon" href="/favicon.ico" />
     <link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon.png" />
+    <link rel="manifest" href="/site.webmanifest" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
@@ -20,13 +21,12 @@
     {{> header}}
 
     <div class="container">
-        <!-- Back Link -->
         <a href="/index.html" class="case-back-link">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5"/><path d="m12 19-7-7 7-7"/></svg>
             <span data-lang="case-back">Back to cases</span>
         </a>
 
-        <!-- Block 1: Hero -->
+        <!-- Hero -->
         <section class="case-hero" data-analytics="hero">
             <img src="/assets/creatego/block-1.jpg" alt="CreateGO — No-code builder for designers" class="case-hero-image">
             <div class="case-hero-overlay">
@@ -37,34 +37,35 @@
                     <span class="case-tag">No-code</span>
                     <span class="case-tag">Web App</span>
                     <span class="case-tag">Startup</span>
+                    <span class="case-tag">Design System</span>
                 </div>
             </div>
         </section>
 
-        <!-- Block 2: Results -->
+        <!-- Key Results -->
         <section class="case-results" data-analytics="results">
             <h2 class="case-results-title" data-lang="case-results-heading">Key Results</h2>
             <div class="case-results-grid">
                 <div class="case-result-card">
-                    <h3 class="result-label" data-lang="case-problem">Problem</h3>
-                    <p class="result-value" data-lang="creatego-problem">Designers depend on developers to turn prototypes into working apps, slowing down the launch cycle</p>
+                    <h3 class="result-label" data-lang="creatego-result-type-label">Product Type</h3>
+                    <p class="result-value" data-lang="creatego-result-type">No-code visual builder — web app</p>
                 </div>
                 <div class="case-result-card">
-                    <h3 class="result-label" data-lang="case-solution">Solution</h3>
-                    <p class="result-value" data-lang="creatego-solution">Visual builder with Figma import, allowing designers to assemble MVPs without coding knowledge</p>
+                    <h3 class="result-label" data-lang="creatego-result-role-label">My Role</h3>
+                    <p class="result-value" data-lang="creatego-result-role">UX/UI Designer — interface architecture & prototyping</p>
                 </div>
                 <div class="case-result-card">
-                    <h3 class="result-label" data-lang="case-metrics">Metrics</h3>
-                    <p class="result-value" data-lang="creatego-metrics">Placeholder — add your metrics here</p>
+                    <h3 class="result-label" data-lang="creatego-result-timeline-label">Timeline</h3>
+                    <p class="result-value" data-lang="creatego-result-timeline">6 months</p>
                 </div>
                 <div class="case-result-card">
-                    <h3 class="result-label" data-lang="case-skills">Skills Applied</h3>
-                    <p class="result-value" data-lang="creatego-skills">UI/UX Design, Design System, Prototyping, User Research</p>
+                    <h3 class="result-label" data-lang="creatego-result-team-label">Team</h3>
+                    <p class="result-value" data-lang="creatego-result-team">Startup team: designer, developers, stakeholders</p>
                 </div>
             </div>
         </section>
 
-        <!-- Block 3: Tools & Team -->
+        <!-- Tools -->
         <section class="case-tools-team" data-analytics="tools">
             <div class="case-tools">
                 <h2 class="case-section-title" data-lang="case-tools">Tools</h2>
@@ -72,40 +73,92 @@
                     <span class="tool-item">Figma</span>
                     <span class="tool-item">Xela UI</span>
                     <span class="tool-item">Prototyping</span>
+                    <span class="tool-item">User Research</span>
                 </div>
             </div>
-            <div class="case-team">
-                <h2 class="case-section-title" data-lang="case-team">Team</h2>
-                <p data-lang="creatego-team">Placeholder — describe team composition here</p>
+        </section>
+
+        <!-- Challenge -->
+        <section class="case-description" data-analytics="challenge">
+            <h2 class="case-description-title" data-lang="creatego-challenge-title">The Challenge</h2>
+            <div>
+                <p class="case-description-text" data-lang="creatego-challenge-text">Designers had to hand off every prototype to developers and wait for implementation — slowing down the entire product cycle. The goal was to let designers build working apps themselves, without writing code.</p>
+                <p class="case-description-text" data-lang="creatego-challenge-gap" style="margin-top:16px">The product required solving a complex design problem: creating a builder interface where each UI element has its own set of configurable properties and behaviors — giving designers real control without overwhelming them.</p>
             </div>
         </section>
 
-        <!-- Block 4: Design Gallery -->
+        <!-- Solution -->
+        <section class="case-description" data-analytics="solution">
+            <h2 class="case-description-title" data-lang="creatego-solution-title">The Solution</h2>
+            <div>
+                <p class="case-description-text" data-lang="creatego-solution-bridge">I acted as a bridge between the design and development teams, thanks to my frontend background. This let me translate technical constraints into intuitive design decisions — and design decisions into developer-friendly specs.</p>
+                <p class="case-description-text" data-lang="creatego-solution-builder" style="margin-top:16px">Designed a visual drag-and-drop builder where every element (buttons, divs, inputs, containers) has a configurable properties panel — similar to FlutterFlow. Designers pick components, set properties, and assemble working interfaces without code.</p>
+                <p class="case-description-text" data-lang="creatego-solution-ds" style="margin-top:16px">UI elements are based on the Xela design system — a high-contrast white and blue palette built for clarity and speed.</p>
+            </div>
+        </section>
+
+        <!-- Process -->
+        <section class="case-description" data-analytics="process">
+            <h2 class="case-description-title" data-lang="creatego-process-title">The Process</h2>
+            <div>
+                <p class="case-description-text" data-lang="creatego-process-text">Worked in a startup team over 6 months. The hardest part was designing the builder itself — figuring out how the visual editor should work, how properties should be structured, and how to make it intuitive for designers with no dev experience. Iterated through multiple prototyping rounds before landing on the right interaction model.</p>
+            </div>
+        </section>
+
+        <!-- Design Gallery -->
         <section class="case-gallery" data-analytics="gallery">
             <h2 class="case-gallery-title" data-lang="case-design">Design</h2>
-            <img src="/assets/creatego/Create&GoHomepage.jpg" alt="CreateGo Homepage" loading="lazy">
-            <img src="/assets/creatego/block-2.png" alt="CreateGo Dashboard" loading="lazy">
-            <img src="/assets/creatego/block-3.png" alt="CreateGo Components" loading="lazy">
-            <img src="/assets/creatego/block-4.png" alt="CreateGo Editor" loading="lazy">
-            <img src="/assets/creatego/block-5.png" alt="CreateGo Templates" loading="lazy">
-            <img src="/assets/creatego/block-6.png" alt="CreateGo Layouts" loading="lazy">
-            <img src="/assets/creatego/block-7.png" alt="CreateGo Export" loading="lazy">
-            <img src="/assets/creatego/UIel.png" alt="CreateGo UI Elements — Xela Design System" loading="lazy">
+            <img src="/assets/creatego/Create&GoHomepage.jpg" alt="CreateGO Homepage" loading="lazy">
+            <img src="/assets/creatego/block-2.png" alt="CreateGO Dashboard" loading="lazy">
+            <img src="/assets/creatego/block-3.png" alt="CreateGO Components" loading="lazy">
+            <img src="/assets/creatego/block-4.png" alt="CreateGO Editor" loading="lazy">
+            <img src="/assets/creatego/block-5.png" alt="CreateGO Templates" loading="lazy">
+            <img src="/assets/creatego/block-6.png" alt="CreateGO Layouts" loading="lazy">
+            <img src="/assets/creatego/block-7.png" alt="CreateGO Export" loading="lazy">
+            <img src="/assets/creatego/UIel.png" alt="CreateGO UI Elements - Xela Design System" loading="lazy">
         </section>
 
-        <!-- Block 5: Description -->
-        <section class="case-description" data-analytics="description">
-            <h2 class="case-description-title" data-lang="case-about-title">About Project</h2>
-            <div>
-                <p class="case-description-text" data-lang="creatego-case-about-description">CreateGo offers an intuitive builder with the ability to import layouts from Figma, automating routine tasks and allowing designers to quickly assemble prototypes and MVPs without the need for programming knowledge.</p>
-                <p class="case-description-text" style="margin-top: 16px;" data-lang="creatego-ui-description">UI elements based on design system Xela, with contrast white and blue palette for clear visual hierarchy.</p>
+        <!-- Related Cases -->
+        <section class="case-related" data-analytics="related" id="related-cases" data-current="creatego">
+            <h2 class="case-related-title" data-lang="case-related">Other Cases</h2>
+            <div class="related-cases-grid">
+                <a href="/unitradex-case.html" class="related-case-card" data-case-slug="unitradex">
+                    <div class="related-case-thumbnail">
+                        <img src="/assets/b2b-distribution/dashboard1.png" alt="UniTradex" loading="lazy">
+                    </div>
+                    <div class="related-case-info">
+                        <h3 class="related-case-title" data-lang="unitradex-case-title">UniTradex</h3>
+                        <p class="related-case-description" data-lang="unitradex-case-desc">B2B distribution platform</p>
+                        <div class="related-case-tags">
+                            <span class="case-tag">B2B</span><span class="case-tag">Web App</span>
+                        </div>
+                    </div>
+                </a>
+                <a href="/yoshop-restaurant-case.html" class="related-case-card" data-case-slug="yoshop-restaurant">
+                    <div class="related-case-thumbnail">
+                        <img src="/assets/yoshop/yoshopCase.png" alt="YoShop" loading="lazy">
+                    </div>
+                    <div class="related-case-info">
+                        <h3 class="related-case-title" data-lang="yoshop-case-title">YoShop</h3>
+                        <p class="related-case-description" data-lang="yoshop-case-desc">POS and inventory system</p>
+                        <div class="related-case-tags">
+                            <span class="case-tag">Retail</span><span class="case-tag">POS</span>
+                        </div>
+                    </div>
+                </a>
+                <a href="/ronto-tech-case.html" class="related-case-card" data-case-slug="ronto">
+                    <div class="related-case-thumbnail">
+                        <img src="/assets/Ronto.png" alt="Ronto Tech" loading="lazy">
+                    </div>
+                    <div class="related-case-info">
+                        <h3 class="related-case-title" data-lang="ronto-case-title">Ronto Tech</h3>
+                        <p class="related-case-description" data-lang="ronto-case-desc">IT company - AI, blockchain, and AR</p>
+                        <div class="related-case-tags">
+                            <span class="case-tag">Branding</span><span class="case-tag">Web</span>
+                        </div>
+                    </div>
+                </a>
             </div>
-        </section>
-
-        <!-- Block 6: Related Cases -->
-        <section class="case-related" data-analytics="related">
-            <h2 class="case-related-title" data-lang="case-related">Related Projects</h2>
-            <div class="related-cases-grid" id="related-cases" data-current="creatego"></div>
         </section>
     </div>
 
