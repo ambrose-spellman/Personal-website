@@ -113,22 +113,25 @@
   "yoshop-metric-platforms-label": "Платформы — Моноблок, K9 Android, POS-терминал",
   "yoshop-metric-markets-label": "Рынки — Казахстан, Корея, Узбекистан",
   "yoshop-metric-modules-label": "Модули — заказы, оплата, отчёты, смены, склад, каталог, брони, администрирование",
+  "yoshop-metric-screens-label": "Экранов спроектировано для 3 платформ",
 
   "creatego-metric-months-label": "Месяцев от концепции до MVP",
   "creatego-metric-competitors-label": "Проанализировано конкурентов",
   "creatego-metric-iterations-label": "Раундов итераций с командой",
   "creatego-metric-nocode-label": "Строк кода для создания приложения",
+  "creatego-metric-elements-label": "Типов элементов с настраиваемыми свойствами",
 
   "chocofood-metric-interviews-label": "Глубинных интервью с пользователями",
   "chocofood-metric-tests-label": "Юзабилити-тестов проведено",
   "chocofood-metric-cjm-label": "Customer Journey Map — полный флоу заказа визуализирован",
   "chocofood-metric-impact-label": "Исследование признано клиентом как потенциально значимое для бизнеса",
+  "chocofood-metric-insights-label": "Ключевых пользовательских инсайтов выявлено",
+  "chocofood-metric-recommendations-label": "UX-рекомендаций передано клиенту",
 
   "vixco-metric-roles-label": "Роли пользователей — покупатель и продавец в одном приложении",
   "vixco-metric-categories-label": "Категории товаров — одежда, косметика, товары для дома",
   "vixco-metric-competitors-label": "Проанализировано конкурентов — OLX, Airbnb и другие",
-  "vixco-metric-scope-label": "Объём проекта — все экраны спроектированы",
-  "vixco-metric-value-scope": "Полный",
+  "vixco-metric-screens-label": "Экранов спроектировано от и до",
 
   "unitradex-metric-modules-label": "Продуктовых модулей спроектировано и запущено",
   "unitradex-metric-platforms-label": "Платформы — веб для дистрибьюторов, мобайл для магазинов",
@@ -137,7 +140,8 @@
 
   "geon-metric-roles-label": "Роли пользователей — зритель, агент, рекламодатель",
   "geon-metric-features-label": "Ключевых функций — эфиры, кошелёк, AR, турниры",
-  "geon-metric-platforms-label": "Платформы — iOS и Android",
+  "geon-metric-platforms-label": "Запущено в App Store и Google Play",
+  "geon-metric-screens-label": "Экранов спроектировано",
 
   "case-back": "Назад к проектам",
   "case-results-heading": "Ключевые результаты",

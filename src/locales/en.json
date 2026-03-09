@@ -113,22 +113,25 @@
   "yoshop-metric-platforms-label": "Platforms — Monoblock, K9 Android, POS terminal",
   "yoshop-metric-markets-label": "Markets — Kazakhstan, Korea, Uzbekistan",
   "yoshop-metric-modules-label": "Modules — orders, payments, reports, shifts, warehouse, catalog, reservations, admin",
+  "yoshop-metric-screens-label": "Screens designed across 3 platforms",
 
   "creatego-metric-months-label": "Months from concept to MVP",
   "creatego-metric-competitors-label": "Competitors analyzed",
   "creatego-metric-iterations-label": "Iteration rounds with the team",
   "creatego-metric-nocode-label": "Lines of code needed to build an app",
+  "creatego-metric-elements-label": "Configurable element types in the builder",
 
   "chocofood-metric-interviews-label": "In-depth user interviews conducted",
   "chocofood-metric-tests-label": "Usability tests completed",
   "chocofood-metric-cjm-label": "Customer Journey Map — full ordering flow visualized",
   "chocofood-metric-impact-label": "Research recognized by client as potentially high business impact",
+  "chocofood-metric-insights-label": "Key user insights identified and documented",
+  "chocofood-metric-recommendations-label": "UX improvement recommendations delivered to client",
 
   "vixco-metric-roles-label": "User roles — buyer & seller in one app",
   "vixco-metric-categories-label": "Product categories — clothing, cosmetics, home goods",
   "vixco-metric-competitors-label": "Competitors analyzed — OLX, Airbnb and others",
-  "vixco-metric-scope-label": "Product scope — all screens designed end-to-end",
-  "vixco-metric-value-scope": "Full",
+  "vixco-metric-screens-label": "Screens designed end-to-end",
 
   "unitradex-metric-modules-label": "Product modules designed and shipped",
   "unitradex-metric-platforms-label": "Platforms — web for distributors, mobile for stores",
@@ -137,7 +140,8 @@
 
   "geon-metric-roles-label": "User roles — viewer, agent, advertiser",
   "geon-metric-features-label": "Key features designed — streams, wallet, AR, tournaments",
-  "geon-metric-platforms-label": "Platforms — iOS and Android",
+  "geon-metric-platforms-label": "Released on App Store & Google Play",
+  "geon-metric-screens-label": "Screens designed",
 
   "case-back": "Back to cases",
   "case-results-heading": "Key Results",
