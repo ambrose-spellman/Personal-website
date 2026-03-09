@@ -30,6 +30,8 @@ export default defineConfig({
         'ronto-tech': resolve(__dirname, 'ronto-tech-case.html'),
         'unitradex': resolve(__dirname, 'unitradex-case.html'),
         'g-eon': resolve(__dirname, 'g-eon-case.html'),
+        'chocofood': resolve(__dirname, 'chocofood-case.html'),
+        'vixco': resolve(__dirname, 'vixco-case.html'),
         'handmade': resolve(__dirname, 'handmade-page.html'),
       },
     },

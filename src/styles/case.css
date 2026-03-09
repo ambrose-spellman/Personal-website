@@ -40,7 +40,7 @@
   height: 100%;
   object-fit: cover;
   object-position: top;
-  height: 40vh;
+  height: 60vh;
 }
 
 .case-hero-overlay {
@@ -127,7 +127,7 @@
 }
 
 .result-value {
-  font-size: 15px;
+  font-size: 14px;
   line-height: 1.6;
   color: var(--chinese-black-700);
   margin: 0;
@@ -218,7 +218,7 @@
 }
 
 .case-description-text {
-  font-size: 16px;
+  font-size: 14px;
   line-height: 1.7;
   color: var(--chinese-black-700);
   margin: 0;
@@ -394,7 +394,7 @@
 
   .case-description-text {
     flex: 2;
-    font-size: 18px;
+    font-size: 16px;
   }
 
   .related-cases-grid {
@@ -420,6 +420,14 @@
   }
 
   .result-value {
+    font-size: 16px;
+  }
+
+  .metric-label {
+    font-size: 16px;
+  }
+
+  .related-case-description {
     font-size: 16px;
   }
 }
@@ -514,9 +522,9 @@
 }
 
 .metrics-title {
-  font-size: 22px;
-  font-weight: 700;
-  color: var(--chinese-black-900);
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--chinese-black-800);
   margin-bottom: 32px;
 }
 
@@ -538,6 +546,13 @@
 .metric-label {
   font-size: 14px;
   color: var(--chinese-black-500);
+  line-height: 1.4;
+}
+
+.metric-item--text .metric-value {
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--chinese-black-800);
   line-height: 1.4;
 }
 

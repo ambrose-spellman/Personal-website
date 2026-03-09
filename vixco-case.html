@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="/assets/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg" />
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/src/styles/normalize.css" />
+    <link rel="stylesheet" href="/src/styles/grid.css" />
+    <link rel="stylesheet" href="/src/styles/style.css" />
+    <link rel="stylesheet" href="/src/styles/case.css">
+    <title data-lang="vixco-page-title">Vixco Store — Case Study</title>
+</head>
+<body>
+    {{> header}}
+
+    <div class="container">
+        <a href="/index.html" class="case-back-link">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5"/><path d="m12 19-7-7 7-7"/></svg>
+            <span data-lang="case-back">Back to cases</span>
+        </a>
+
+        <!-- Hero -->
+        <section class="case-hero" data-analytics="hero">
+            <img src="/assets/vixco-case.webp" alt="Vixco Store — E-commerce mobile app" class="case-hero-image">
+            <div class="case-hero-overlay">
+                <h1 class="case-hero-title" data-lang="vixco-hero-title">Vixco Store</h1>
+                <p class="case-hero-subtitle" data-lang="vixco-hero-subtitle">E-commerce mobile app with dual roles — buy and sell clothing, cosmetics, and home goods in one app</p>
+                <div class="case-tags">
+                    <span class="case-tag">E-commerce</span>
+                    <span class="case-tag">Mobile</span>
+                    <span class="case-tag">Flutter</span>
+                    <span class="case-tag">Marketplace</span>
+                    <span class="case-tag">iOS / Android</span>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Team -->
+        <section class="case-team-visual" data-analytics="team">
+            <div class="team-visual-grid">
+                <div class="team-group">
+                    <div class="team-avatars">
+                        <div class="team-avatar me"></div>
+                    </div>
+                    <p class="team-group-role">Design</p>
+                    <p class="team-group-count">1 designer</p>
+                </div>
+                <div class="team-group">
+                    <div class="team-avatars">
+                        <div class="team-avatar"></div>
+                    </div>
+                    <p class="team-group-role">Management</p>
+                    <p class="team-group-count">1 PM</p>
+                </div>
+                <div class="team-group">
+                    <div class="team-avatars">
+                        <div class="team-avatar"></div>
+                    </div>
+                    <p class="team-group-role">Development</p>
+                    <p class="team-group-count">1 Flutter dev</p>
+                </div>
+            </div>
+            <p class="team-my-role"><span class="team-role-label">My role</span> UX/UI Designer — sole designer, full product scope</p>
+        </section>
+
+        <!-- Tools -->
+        <section class="case-tools-team" data-analytics="tools">
+            <div class="case-tools">
+                <h2 class="case-section-title" data-lang="case-tools">Tools</h2>
+                <div class="tool-icons">
+                    <span class="tool-item">Figma</span>
+                    <span class="tool-item">Prototyping</span>
+                    <span class="tool-item">User Flow</span>
+                    <span class="tool-item">Competitor Analysis</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Challenge -->
+        <section class="case-description" data-analytics="challenge">
+            <h2 class="case-description-title" data-lang="vixco-challenge-title">The Challenge</h2>
+            <div>
+                <p class="case-description-text" data-lang="vixco-challenge-text">Design a mobile marketplace where the same user can switch between buyer and seller roles within a single app. The seller side needed product creation flows and a basic sales analytics dashboard — while the buyer side required a smooth, familiar shopping experience.</p>
+                <p class="case-description-text" data-lang="vixco-challenge-dual" style="margin-top:16px">The core design challenge was keeping both roles intuitive without making the app feel bloated. Switching context between buyer and seller needed to feel natural — not like using two different apps.</p>
+            </div>
+        </section>
+
+        <!-- Solution -->
+        <section class="case-description" data-analytics="solution">
+            <h2 class="case-description-title" data-lang="vixco-solution-title">The Solution</h2>
+            <div>
+                <p class="case-description-text" data-lang="vixco-solution-roles">Designed a clear role-switching mechanism that keeps the buyer and seller experiences separate but easily accessible. Each role has its own navigation context — the seller's dashboard, product management, and analytics are distinct from the shopping flow.</p>
+                <p class="case-description-text" data-lang="vixco-solution-seller" style="margin-top:16px">The seller interface focused on simplicity: product creation with category selection (clothing, cosmetics, home goods), photo upload, pricing, and a lightweight analytics view showing sales summaries. Designed specifically for non-technical sellers who manage their store on mobile.</p>
+                <p class="case-description-text" data-lang="vixco-solution-research" style="margin-top:16px">Competitor research covered platforms like OLX and Airbnb — both strong examples of dual-role marketplaces — to identify best practices for role switching, listing flows, and trust signals.</p>
+            </div>
+        </section>
+
+        <!-- Process -->
+        <section class="case-description" data-analytics="process">
+            <h2 class="case-description-title" data-lang="vixco-process-title">The Process</h2>
+            <div>
+                <p class="case-description-text" data-lang="vixco-process-text">Worked in a small team of 3 — designer, PM, and Flutter developer. Started with requirements gathering and competitor analysis across 5 platforms. Built out user flows for both roles before moving to wireframes and high-fidelity screens. Regular syncs with the developer ensured designs were Flutter-compatible. Iterated on key flows based on team feedback and stakeholder reviews.</p>
+            </div>
+        </section>
+
+        <!-- Metrics -->
+        <section class="case-metrics-block" data-analytics="metrics">
+            <div class="metrics-card">
+                <h2 class="metrics-title" data-lang="case-metrics-results-title">Results</h2>
+                <div class="metrics-grid">
+                    <div class="metric-item">
+                        <p class="metric-value">2</p>
+                        <p class="metric-label" data-lang="vixco-metric-roles-label">User roles — buyer & seller in one app</p>
+                    </div>
+                    
+                    <div class="metric-item">
+                        <p class="metric-value">5</p>
+                        <p class="metric-label" data-lang="vixco-metric-competitors-label">Competitors analyzed — OLX, Airbnb and others</p>
+                    </div>
+                    <div class="metric-item">
+                        <p class="metric-value" data-lang="vixco-metric-value-scope">Full</p>
+                        <p class="metric-label" data-lang="vixco-metric-scope-label">Product scope — all screens designed end-to-end</p>
+                    </div>
+                
+                </div>
+            </div>
+        </section>
+
+        <!-- Design Gallery -->
+        <section class="case-gallery" data-analytics="gallery">
+            <h2 class="case-gallery-title" data-lang="case-design">Design</h2>
+            <img src="/assets/vixco-case.webp" alt="Vixco Store — main interface" loading="lazy">
+        </section>
+
+        <!-- Related Cases -->
+        <section class="case-related" data-analytics="related" id="related-cases" data-current="vixco">
+            <h2 class="case-related-title" data-lang="case-related">Other Cases</h2>
+            <div class="related-cases-grid">
+                <a href="/g-eon-case.html" class="related-case-card" data-case-slug="geon">
+                    <div class="related-case-thumbnail">
+                        <img src="/assets/geon/geon-case.png" alt="G-Eon" loading="lazy">
+                    </div>
+                    <div class="related-case-info">
+                        <h3 class="related-case-title" data-lang="geon-case-title">G-Eon</h3>
+                        <p class="related-case-description" data-lang="geon-case-desc">Mobile streaming platform — live streams, AR, wallet, tournaments</p>
+                        <div class="related-case-tags">
+                            <span class="case-tag">Mobile</span><span class="case-tag">Streaming</span>
+                        </div>
+                    </div>
+                </a>
+                <a href="/creatego-case.html" class="related-case-card" data-case-slug="creatego">
+                    <div class="related-case-thumbnail">
+                        <img src="/assets/Creatego.png" alt="CreateGO" loading="lazy">
+                    </div>
+                    <div class="related-case-info">
+                        <h3 class="related-case-title" data-lang="creatego-case-title">CreateGO</h3>
+                        <p class="related-case-description" data-lang="creatego-case-desc">No-code builder for designers</p>
+                        <div class="related-case-tags">
+                            <span class="case-tag">No-code</span><span class="case-tag">Web App</span>
+                        </div>
+                    </div>
+                </a>
+                <a href="/yoshop-restaurant-case.html" class="related-case-card" data-case-slug="yoshop-restaurant">
+                    <div class="related-case-thumbnail">
+                        <img src="/assets/yoshop/yoshopCase.png" alt="YoShop" loading="lazy">
+                    </div>
+                    <div class="related-case-info">
+                        <h3 class="related-case-title" data-lang="yoshop-case-title">YoShop</h3>
+                        <p class="related-case-description" data-lang="yoshop-case-desc">POS and inventory system — retail stores, restaurants, 3 platforms</p>
+                        <div class="related-case-tags">
+                            <span class="case-tag">Retail</span><span class="case-tag">POS</span>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </section>
+    </div>
+
+    {{> footer}}
+    <script type="module" src="/src/js/main.js"></script>
+</body>
+</html>

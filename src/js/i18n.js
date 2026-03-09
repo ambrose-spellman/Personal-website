@@ -59,6 +59,11 @@ class I18n {
     if (titleElement && translations[titleElement.getAttribute('data-lang')]) {
       document.title = translations[titleElement.getAttribute('data-lang')];
     }
+
+    // Update language-specific hrefs (e.g. CV download links)
+    document.querySelectorAll(`[data-lang-href-${this.currentLang}]`).forEach(el => {
+      el.setAttribute('href', el.getAttribute(`data-lang-href-${this.currentLang}`));
+    });
   }
 
   setupLanguageButtons() {

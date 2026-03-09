@@ -24,6 +24,22 @@ export const cases = {
     thumbnail: '/assets/yoshop/yoshopCase.png',
     role: 'UX/UI Designer',
   },
+  'vixco': {
+    title: { en: 'Vixco Store', ru: 'Vixco Store' },
+    description: { en: 'E-commerce mobile app — buy and sell clothing, cosmetics, and home goods', ru: 'Мобильный маркетплейс — одежда, косметика, товары для дома' },
+    tags: ['mobile', 'e-commerce', 'marketplace', 'startup'],
+    url: '/vixco-case.html',
+    thumbnail: '/assets/vixco-preview.png',
+    role: 'UX/UI Designer',
+  },
+  'chocofood': {
+    title: { en: 'ChocoFood', ru: 'ChocoFood' },
+    description: { en: 'UX research for a food delivery app — interviews, usability tests, CJM', ru: 'UX-исследование для сервиса доставки еды — интервью, тесты, CJM' },
+    tags: ['ux-research', 'mobile', 'food', 'usability'],
+    url: '/chocofood-case.html',
+    thumbnail: '/assets/choco/research1.webp',
+    role: 'UX Researcher',
+  },
   'geon': {
     title: { en: 'G-Eon', ru: 'G-Eon' },
     description: { en: 'Mobile streaming platform — live streams, AR, wallet, tournaments', ru: 'Мобильная стриминговая платформа — прямые эфиры, AR, кошелёк, турниры' },

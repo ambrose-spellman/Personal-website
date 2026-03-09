@@ -68,6 +68,18 @@ body {
   border-left: 1px solid var(--border-color);
 }
 
+.header-icon {
+  width: 16px;
+  height: 16px;
+  margin-right: 6px;
+  opacity: 0.6;
+  transition: opacity 0.2s ease;
+}
+
+.header-link:hover .header-icon {
+  opacity: 1;
+}
+
 .header-link:hover {
   color: var(--green-700);
 }
@@ -160,7 +172,7 @@ body {
   margin-bottom: 8px;
 }
 .nav-link {
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 600;
   color: var(--chinese-black-700);
   text-decoration: none;
@@ -515,7 +527,7 @@ body {
   }
 
   .hero-description {
-    font-size: 14px;
+    font-size: 16px;
   }
 
   .contact-link {
@@ -567,144 +579,67 @@ body {
   color: #ffffffdd;
   margin-bottom: 32px;
 }
-.portfolio-case {
-  border-radius: 20px;
-}
 .portfolio-case-link {
   display: block;
-  width: 100%;
-  min-height: 300px;
-  padding: 24px;
-  border-radius: 20px;
-  cursor: pointer;
-  background-position: bottom right;
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-color: #F7E1D7;
-  position: relative;
-  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
   text-decoration: none;
-  border: 2px solid transparent;
+  color: inherit;
+  transition: transform 0.3s ease;
 }
-
 .portfolio-case-link:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
-  border-color: var(--pink-600);
-}
-
-.portfolio-case-link:active {
   transform: translateY(-4px);
 }
-
-.portfolio-case-see-layer {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  left: 0;
+.portfolio-case-image {
+  width: 100%;
+  aspect-ratio: 16 / 10;
+  border-radius: 16px;
+  overflow: hidden;
+  background-color: #f0ede8;
+  margin-bottom: 16px;
+}
+.portfolio-case-image img {
   width: 100%;
   height: 100%;
-  background: #ffffff48;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  opacity: 0;
-  border-radius: 20px;
-  transition: all 0.3s ease;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.4s ease;
 }
-.portfolio-case-see {
-  font-size: 16px;
-  color: #fff;
-  background: var(--dark-main-green);
-  padding: 8px;
-  border-radius: 8px;
+.portfolio-case-link:hover .portfolio-case-image img {
+  transform: scale(1.03);
 }
-.portfolio-case-link:hover > .portfolio-case-see-layer {
-  opacity: 1;
-}
-
-.unitradex {
-  background-image: url("/assets/b2b-view.png");
-}
-.yoshopRestaurant {
-  background-image: url("/assets/yoshop/yoshopCase.png");
-}
-.createGo {
-  background-image: url("/assets/Creatego.png");
-}
-.geon {
-  background-image: url("/assets/geon/geon-case.png");
-  background-position: center 70%;
-  
-}
-.yoShopKiosk {
-  background-image: url("/assets/Kiosk.png");
-}
-.vixco {
-  background-image: url("/assets/Vixco.png");
-}
-.ronto {
-  background-image: url("/assets/Ronto.png");
-}
-.bizexpo {
-  background-image: url("/assets/BizExpoAsia.png");
-}
-.land-preview {
-  background-image: url("/assets/landing-previews.png");
-}
-.apps-preview {
-  background-image: url("/assets/app-previews.png");
+.portfolio-case-info {
+  padding: 0 4px;
 }
 .portfolio-case-title {
   font-size: 18px;
-  font-weight: 600;
+  font-weight: 700;
   line-height: 140%;
   color: var(--chinese-black-800);
+  margin-bottom: 6px;
 }
 .portfolio-case-description {
-  font-size: 14px;
-  font-weight: 500;
+  font-size: 13px;
+  font-weight: 400;
   line-height: 150%;
-  color: var(--chinese-black-700);
+  color: #888;
 }
 .portfolio-cases-container {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: 1fr;
   gap: 40px;
 }
 .case-description {
   margin-bottom: 24px;
 }
 @media (min-width: 768px) {
-  .portfolio-case-link {
-    background-size: 95%;
-    min-height: 350px;
-    width: 47%;
-  }
   .portfolio-cases-container {
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-  }
-  .yoShopKiosk {
-    background-size: 70%;
-    background-position: right 180px;
+    grid-template-columns: 1fr 1fr;
+    gap: 48px 32px;
   }
   .portfolio-title-wrapper {
     flex-direction: row;
   }
-}
-@media (min-width: 320px) and (max-width: 767px) {
-  .yoShopKiosk {
-    background-size: 70%;
-    background-position: right 180px;
-  }
-}
-
-@media (max-width: 767px) {
-  .portfolio-case-link {
-    background-size: 90%;
+  .portfolio-case-title {
+    font-size: 20px;
   }
 }
 
@@ -811,7 +746,66 @@ body {
     width: 28px;
     height: 28px;
   }
+  .mt-70 {
+    margin-top: 70px;
+
+  }
 }
+
+/* About page */
+.about-hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 24px;
+  margin-bottom: 40px;
+}
+.about-heading {
+  font-size: 48px;
+  font-weight: 800;
+  color: #1a1a2e;
+  line-height: 1.1;
+}
+.about-portrait {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+.about-story {
+  margin-bottom: 48px;
+}
+.about-two-col {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 32px;
+}
+.about-eyebrow {
+  font-size: 11px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #888;
+  margin-bottom: 12px;
+  font-weight: 600;
+}
+@media (min-width: 768px) {
+  .about-heading {
+    font-size: 72px;
+  }
+  .about-portrait {
+    width: 180px;
+    height: 180px;
+  }
+  .about-two-col {
+    grid-template-columns: 1fr 1fr;
+    gap: 56px;
+  }
+  .about-col-main .personal-info-desc {
+    font-size: 18px;
+  }
+}
+
 .personal-info {
   display: flex;
   justify-content: space-between;
@@ -828,10 +822,10 @@ body {
   font-size: 24px;
   color: #393939;
   font-weight: 600;
-  margin-bottom: 40px;
+  margin-bottom: 24px;
 }
 .personal-info-desc {
-  font-size: 16px;
+  font-size: 14px;
   color: var(--chinese-black-700);
   line-height: 150%;
   margin-bottom: 20px;
@@ -858,9 +852,7 @@ body {
 }
 @media (min-width: 768px) {
   .personal-info {
-    margin-bottom: 80px;
     flex-direction: row;
-    margin-top: 36px;
   }
   .personal-info img {
     width: 45%;
@@ -874,10 +866,10 @@ body {
     font-size: 36px;
   }
   .personal-info-text {
-    width: 45%;
+    width: 50%;
   }
   .personal-info-desc {
-    font-size: 18px;
+    font-size: 16px;
   }
   /* resume */
   .resume {
@@ -978,52 +970,100 @@ body {
   }
 }
 
-.hobbies-wrapper {
+/* ===== HOBBIES REDESIGN ===== */
+.hobbies-redesign {
+  padding: 48px 0 80px;
+}
+
+.hobbies-two-col {
   display: grid;
   grid-template-columns: 1fr;
   gap: 40px;
+  align-items: start;
 }
-.hobby-case {
-  width: 100%;
-}
-.hobby-title-wrapper {
-  display: flex;
-  gap: 16px;
-  align-items: center;
-  justify-content: space-between;
-  width: 100%;
-}
-.hobby-title {
+
+.hobby-heading {
   font-size: 20px;
-  font-weight: 600;
-  margin-bottom: 16px;
+  font-weight: 700;
+  color: var(--chinese-black-900);
+  margin-bottom: 24px;
 }
-.hobby-case a {
+
+.hobby-verbs {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.hobby-verb-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.hobby-more-link {
   color: #339cff;
-  display: inline-block;
-  margin-bottom: 16px;
+  font-size: 13px;
+  white-space: nowrap;
 }
-.hobby-case-img-wrapper {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+
+.hobby-verb {
+  display: block;
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--chinese-black-900);
+  line-height: 1.8;
+}
+
+.hobbies-photos-masonry {
+  columns: 2;
+  column-gap: 8px;
+}
+.back-link {
+  display: inline-flex;
+  align-items: center;
   gap: 8px;
+  color: var(--chinese-black-700);
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 16px;
+  padding: 20px 0;
+  transition: color 0.3s ease;
 }
-.hobby-case-img-wrapper img {
+
+.back-link:hover {
+  color: var(--green-700);
+}
+
+.back-link svg {
+  width: 20px;
+  height: 20px;
+}
+.hobbies-photos-masonry img {
   width: 100%;
-  height: 200px;
-  object-fit: cover;
+  margin-bottom: 8px;
   border-radius: 12px;
+  break-inside: avoid;
+  display: block;
+  object-fit: cover;
 }
+
 @media screen and (min-width: 768px) {
-  .hobbies-wrapper {
-    grid-template-columns: 1fr 1fr;
-    gap: 48px;
+  .hobbies-two-col {
+    grid-template-columns: 280px 1fr;
+    gap: 56px;
   }
-  .hobby-title {
+
+  .hobby-heading {
     font-size: 22px;
   }
-  .hobby-case-img-wrapper img {
-    height: 240px;
+
+  .hobby-verb {
+    font-size: 17px;
+  }
+
+  .hobbies-photos-masonry {
+    columns: 3;
   }
 }
 .portfolio-title-wrapper {
