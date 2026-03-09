@@ -29,7 +29,7 @@ export const cases = {
     description: { en: 'Mobile streaming platform — live streams, AR, wallet, tournaments', ru: 'Мобильная стриминговая платформа — прямые эфиры, AR, кошелёк, турниры' },
     tags: ['mobile', 'streaming', 'startup', 'AR', 'iOS', 'Android'],
     url: '/g-eon-case.html',
-    thumbnail: '/assets/geon/geon1.png',
+    thumbnail: '/assets/geon/geon-case.png',
     role: 'UX/UI Designer',
   },
 };

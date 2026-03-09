@@ -24,8 +24,7 @@
 
 /* ====== BLOCK 1: CASE HERO ====== */
 .case-hero {
-  position: relative;
-  min-height: min(360px, 50vh);
+  min-height: 25vh;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -33,6 +32,7 @@
   overflow: hidden;
   margin-bottom: 40px;
   background-color: var(--chinese-black-50);
+  position: relative;
 }
 
 .case-hero-image {
@@ -40,15 +40,14 @@
   height: 100%;
   object-fit: cover;
   object-position: top;
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 1;
+  height: 40vh;
 }
 
 .case-hero-overlay {
-  position: relative;
-  z-index: 2;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
   padding: 32px 24px;
   background: linear-gradient(to top, rgba(0, 0, 0, 0.88) 0%, rgba(0, 0, 0, 0.7) 45%, transparent 75%);
 }
@@ -142,7 +141,6 @@
   padding: 40px 0;
   margin-bottom: 40px;
   border-top: 1px solid var(--border-color);
-  border-bottom: 1px solid var(--border-color);
 }
 
 .case-section-title {
@@ -330,7 +328,7 @@
 /* ====== RESPONSIVE: TABLET+ ====== */
 @media (min-width: 768px) {
   .case-hero {
-    min-height: min(360px, 45vh);
+    /* min-height: min(360px, 45vh); */
   }
 
   .case-hero-overlay {
@@ -423,5 +421,149 @@
 
   .result-value {
     font-size: 16px;
+  }
+}
+
+/* ====== TEAM VISUAL ====== */
+.case-team-visual {
+  padding: 40px 0;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.team-visual-grid {
+  display: flex;
+  gap: 48px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+.team-group {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.team-avatars {
+  display: flex;
+  align-items: center;
+  margin-bottom: 4px;
+}
+
+.team-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  margin-left: -10px;
+  background-color: var(--chinese-black-100);
+  background-size: cover;
+  background-position: center;
+  flex-shrink: 0;
+}
+
+.team-avatar:first-child { margin-left: 0; }
+
+.team-avatar:nth-child(1) { background-image: url('/assets/avatar (1).png'); }
+.team-avatar:nth-child(2) { background-image: url('/assets/avatar (8).png'); }
+.team-avatar:nth-child(3) { background-image: url('/assets/avatar (3).png'); }
+.team-avatar:nth-child(4) { background-image: url('/assets/avatar (4).png'); }
+.team-avatar:nth-child(5) { background-image: url('/assets/avatar (5).png'); }
+.team-avatar:nth-child(6) { background-image: url('/assets/avatar (6).png'); }
+.team-avatar:nth-child(7) { background-image: url('/assets/avatar (7).png'); }
+.team-avatar:nth-child(8) { background-image: url('/assets/avatar (8).png'); }
+
+.team-avatar.me {
+  background-image: url('/assets/logo.jpg') !important;
+}
+
+.team-group-role {
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--chinese-black-900);
+  margin: 0;
+}
+
+.team-group-count {
+  font-size: 13px;
+  color: var(--chinese-black-500);
+  margin: 0;
+}
+
+.team-my-role {
+  font-size: 14px;
+  color: var(--chinese-black-500);
+  margin: 0;
+}
+
+.team-role-label {
+  font-weight: 500;
+  color: var(--chinese-black-700);
+  margin-right: 4px;
+}
+
+/* ====== METRICS BLOCK ====== */
+.case-metrics-block {
+  padding: 40px 0;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.metrics-card {
+  border: 2px dashed var(--border-color);
+  border-radius: 20px;
+  padding: 36px;
+}
+
+.metrics-title {
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--chinese-black-900);
+  margin-bottom: 32px;
+}
+
+.metrics-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+  margin-bottom: 24px;
+}
+
+.metric-value {
+  font-size: 52px;
+  font-weight: 800;
+  color: var(--green-700);
+  line-height: 1;
+  margin-bottom: 8px;
+}
+
+.metric-label {
+  font-size: 14px;
+  color: var(--chinese-black-500);
+  line-height: 1.4;
+}
+
+.metrics-description {
+  font-size: 14px;
+  color: var(--chinese-black-500);
+  line-height: 1.6;
+  padding-top: 20px;
+  border-top: 1px solid var(--border-color);
+}
+
+@media (max-width: 767px) {
+  .metrics-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+
+  .metric-value {
+    font-size: 36px;
+  }
+
+  .metrics-card {
+    padding: 24px;
+  }
+
+  .team-visual-grid {
+    gap: 28px;
   }
 }
