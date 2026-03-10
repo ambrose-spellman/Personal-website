@@ -4,7 +4,7 @@ export class UIManager {
   constructor() {
     this.header = document.querySelector('#header');
     this.menuButton = document.querySelector('.menu-toggle');
-    this.menuOverlay = document.querySelector('.menu-overlay');
+    this.menuOverlay = document.querySelector('.menu-dropdown');
     this.scrollToTopBtn = document.querySelector('.to-top');
     
     this.init();
