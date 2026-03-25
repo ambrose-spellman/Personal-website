@@ -8,14 +8,6 @@ export const cases = {
     thumbnail: '/assets/Creatego.png',
     role: 'UX/UI Designer',
   },
-  'ronto-tech': {
-    title: { en: 'Ronto Tech', ru: 'Ronto Tech' },
-    description: { en: 'IT company focused on AI, blockchain, and AR', ru: 'ИТ компания в области ИИ, блокчейна и AR' },
-    tags: ['blockchain', 'AI', 'AR', 'website', 'startup'],
-    url: '/ronto-tech-case.html',
-    thumbnail: '/assets/Ronto.png',
-    role: 'UX/UI Designer',
-  },
   'yoshop-restaurant': {
     title: { en: 'YoShop', ru: 'YoShop' },
     description: { en: 'POS and inventory system — retail stores, restaurants, 3 platforms', ru: 'POS-система и учёт товаров — магазины, рестораны, 3 платформы' },
