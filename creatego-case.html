@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="/src/styles/normalize.css" />
     <link rel="stylesheet" href="/src/styles/grid.css" />
     <link rel="stylesheet" href="/src/styles/style.css" />
-    <link rel="stylesheet" href="/src/styles/case.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css">
     <title data-lang="creatego-page-title">CreateGO — Case Study</title>
 </head>
 <body>
@@ -22,7 +22,7 @@
 
     <div class="container">
         <a href="/index.html" class="case-back-link">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5"/><path d="m12 19-7-7 7-7"/></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5"/><path d="m12 19-7-7 7-7"/></svg>
             <span data-lang="case-back">Back to cases</span>
         </a>
 
@@ -70,22 +70,6 @@
                     <p class="team-group-count">founders</p>
                 </div>
             </div>
-            <p class="team-my-role"><span class="team-role-label">My role</span> UX/UI Designer — bridge between design and development</p>
-        </section>
-
-        <!-- Tools -->
-        <section class="case-tools-team" data-analytics="tools">
-            <div class="case-tools">
-                <h2 class="case-section-title" data-lang="case-tools">Tools</h2>
-                <div class="tool-icons">
-                    <span class="tool-item">Figma</span>
-                    <span class="tool-item">Xela UI</span>
-                    <span class="tool-item">Prototyping</span>
-                    <span class="tool-item">User Research</span>
-                    <span class="tool-item">Manual Testing</span>
-                    <span class="tool-item">Competitor Analysis</span>
-                </div>
-            </div>
         </section>
 
         <!-- Challenge -->
@@ -118,7 +102,7 @@
         <!-- Metrics -->
         <section class="case-metrics-block" data-analytics="metrics">
             <div class="metrics-card">
-                <h2 class="metrics-title" data-lang="case-metrics-results-title">Results</h2>
+                <h2 class="case-description-title" data-lang="case-metrics-results-title">Results</h2>
                 <div class="metrics-grid">
                     <div class="metric-item">
                         <p class="metric-value">6</p>
@@ -148,14 +132,14 @@
         <!-- Design Gallery -->
         <section class="case-gallery" data-analytics="gallery">
             <h2 class="case-gallery-title" data-lang="case-design">Design</h2>
-            <img src="/assets/creatego/Create&GoHomepage.jpg" alt="CreateGO Homepage" loading="lazy">
-            <img src="/assets/creatego/block-2.png" alt="CreateGO Dashboard" loading="lazy">
-            <img src="/assets/creatego/block-3.png" alt="CreateGO Components" loading="lazy">
-            <img src="/assets/creatego/block-4.png" alt="CreateGO Editor" loading="lazy">
-            <img src="/assets/creatego/block-5.png" alt="CreateGO Templates" loading="lazy">
-            <img src="/assets/creatego/block-6.png" alt="CreateGO Layouts" loading="lazy">
-            <img src="/assets/creatego/block-7.png" alt="CreateGO Export" loading="lazy">
-            <img src="/assets/creatego/UIel.png" alt="CreateGO UI Elements - Xela Design System" loading="lazy">
+            <a class="gallery-item glightbox" href="/assets/creatego/Create&GoHomepage.jpg" data-gallery="creatego-gallery"><img src="/assets/creatego/Create&GoHomepage.jpg" alt="CreateGO Homepage" loading="lazy"></a>
+            <a class="gallery-item glightbox" href="/assets/creatego/block-2.png" data-gallery="creatego-gallery"><img src="/assets/creatego/block-2.png" alt="CreateGO Dashboard" loading="lazy"></a>
+            <a class="gallery-item glightbox" href="/assets/creatego/block-3.png" data-gallery="creatego-gallery"><img src="/assets/creatego/block-3.png" alt="CreateGO Components" loading="lazy"></a>
+            <a class="gallery-item glightbox" href="/assets/creatego/block-4.png" data-gallery="creatego-gallery"><img src="/assets/creatego/block-4.png" alt="CreateGO Editor" loading="lazy"></a>
+            <a class="gallery-item glightbox" href="/assets/creatego/block-5.png" data-gallery="creatego-gallery"><img src="/assets/creatego/block-5.png" alt="CreateGO Templates" loading="lazy"></a>
+            <a class="gallery-item glightbox" href="/assets/creatego/block-6.png" data-gallery="creatego-gallery"><img src="/assets/creatego/block-6.png" alt="CreateGO Layouts" loading="lazy"></a>
+            <a class="gallery-item glightbox" href="/assets/creatego/block-7.png" data-gallery="creatego-gallery"><img src="/assets/creatego/block-7.png" alt="CreateGO Export" loading="lazy"></a>
+            <a class="gallery-item glightbox" href="/assets/creatego/UIel.png" data-gallery="creatego-gallery"><img src="/assets/creatego/UIel.png" alt="CreateGO UI Elements - Xela Design System" loading="lazy"></a>
         </section>
 
         <!-- Related Cases -->
@@ -164,7 +148,7 @@
             <div class="related-cases-grid">
                 <a href="/unitradex-case.html" class="related-case-card" data-case-slug="unitradex">
                     <div class="related-case-thumbnail">
-                        <img src="/assets/b2b-distribution/dashboard1.png" alt="UniTradex" loading="lazy">
+                        <img src="/assets/unitradex/dashboard2.png" alt="UniTradex" loading="lazy">
                     </div>
                     <div class="related-case-info">
                         <h3 class="related-case-title" data-lang="unitradex-case-title">UniTradex</h3>
@@ -192,5 +176,7 @@
 
     {{> footer}}
     <script type="module" src="/src/js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
+    <script>const lightbox = GLightbox({ selector: '.glightbox' });</script>
 </body>
 </html>

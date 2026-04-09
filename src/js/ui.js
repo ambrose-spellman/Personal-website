@@ -5,8 +5,10 @@ export class UIManager {
     this.header = document.querySelector('#header');
     this.menuButton = document.querySelector('.menu-toggle');
     this.menuOverlay = document.querySelector('.menu-dropdown');
-    this.scrollToTopBtn = document.querySelector('.to-top');
-    
+    this.scrollNav = document.querySelector('.scroll-nav');
+    this.scrollToTopBtn = document.querySelector('.scroll-btn--up');
+    this.scrollToBottomBtn = document.querySelector('.scroll-btn--down');
+
     this.init();
   }
 
@@ -41,26 +43,16 @@ export class UIManager {
   }
 
   setupStickyHeader() {
-    if (!this.header) return;
-
-    let lastScrollTop = 0;
-    const headerHeight = this.header.offsetHeight;
+    const headerEl = document.querySelector('.header');
+    if (!headerEl) return;
 
     window.addEventListener('scroll', () => {
-      const scrollTop = window.scrollY || document.documentElement.scrollTop;
-
-      if (scrollTop > headerHeight) {
-        if (scrollTop > lastScrollTop) {
-          this.header.classList.add('sticky');
-        } else {
-          this.header.classList.remove('sticky');
-        }
+      if (window.scrollY > 10) {
+        headerEl.classList.add('scrolled');
       } else {
-        this.header.classList.remove('sticky');
+        headerEl.classList.remove('scrolled');
       }
-
-      lastScrollTop = scrollTop;
-    });
+    }, { passive: true });
   }
 
   setupSmoothScroll() {
@@ -98,29 +90,42 @@ export class UIManager {
         if (href && href.startsWith('#')) {
           e.preventDefault();
           smoothScroll(href, 1000);
+        } else if (href && href.includes('#')) {
+          // Handle cross-page anchors like /#portfolio when already on the same page
+          const hashIndex = href.indexOf('#');
+          const hash = href.substring(hashIndex);
+          const target = document.querySelector(hash);
+          if (target) {
+            e.preventDefault();
+            smoothScroll(hash, 1000);
+          }
         }
       });
     });
   }
 
   setupScrollToTop() {
-    if (!this.scrollToTopBtn) return;
+    if (!this.scrollNav) return;
 
     window.addEventListener('scroll', () => {
-      if (window.scrollY > 1000) {
-        this.scrollToTopBtn.style.display = 'block';
+      if (window.scrollY > 300) {
+        this.scrollNav.classList.add('visible');
       } else {
-        this.scrollToTopBtn.style.display = 'none';
+        this.scrollNav.classList.remove('visible');
       }
-    });
+    }, { passive: true });
 
-    this.scrollToTopBtn.addEventListener('click', (e) => {
-      e.preventDefault();
-      window.scrollTo({
-        top: 0,
-        behavior: 'smooth'
+    if (this.scrollToTopBtn) {
+      this.scrollToTopBtn.addEventListener('click', () => {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
       });
-    });
+    }
+
+    if (this.scrollToBottomBtn) {
+      this.scrollToBottomBtn.addEventListener('click', () => {
+        window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' });
+      });
+    }
   }
 
   setupCopyButton() {

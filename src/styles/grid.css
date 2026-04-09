@@ -1,12 +1,12 @@
 .container {
-  max-width: 95%;
+  width: 90%;
+  max-width: 90%;
   margin: 0 auto;
-  padding: 0 16px;
+  padding: 0;
 }
-
-@media (min-width: 1024px) {
-  .container {
-    max-width: 1024px;
-    padding: 0 24px;
-  }
+.d-flex {
+  display: flex;
+}
+.alighn-items-center {
+  align-items: center;
 }

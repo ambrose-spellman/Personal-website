@@ -4,26 +4,26 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  
+
   <!-- Favicons -->
   <link rel="icon" type="image/png" href="/assets/favicon-96x96.png" sizes="96x96" />
   <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg" />
   <link rel="shortcut icon" href="/favicon.ico" />
   <link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon.png" />
   <link rel="manifest" href="/site.webmanifest" />
-  
+
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-  
+
   <!-- Styles -->
   <link rel="stylesheet" href="/src/styles/normalize.css" />
   <link rel="stylesheet" href="/src/styles/grid.css" />
   <link rel="stylesheet" href="/src/styles/style.css" />
-  
+
   <title data-lang="home-page-title">UX/UI designer Saikal Kaparbekova</title>
-  
+
 </head>
 
 <body>
@@ -34,35 +34,56 @@
     <section class="hero-section">
       <div class="container">
         <div class="hero-container">
-          <!-- Left Side: Menu & Navigation -->
+          <!-- Left Side: Info & Buttons -->
           <div class="hero-left">
             <div class="hero-info">
-              <h1 class="hero-title" data-lang="hero-title">Saikal Kaparbekova</h1>
-              <p class="hero-subtitle" data-lang="hero-subtitle">UX/UI Designer · 7 Years in Tech · B2B SaaS & Fintech</p>
+              <p class="hero-hello" data-lang="hero-hello">Hello, I'm Saikal</p>
+             <div class="d-flex alighn-items-center">
+               <h1 class="hero-title" data-lang="hero-title">UX/UI Designer </h1>
+              <img class="logo_img" src="/assets/logo.jpg" alt="Saikal Kaparbekova"/>
+              </div>
+              <h4 class="hero-role" data-lang="hero-role">with Front-End Development Background</h4>
               <p class="hero-description" data-lang="hero-description">Designer with a technical background in front-end development. I design user-centered digital products for B2B and B2C markets, bringing both design thinking and technical understanding to create interfaces that work seamlessly.</p>
             </div>
 
-            <div class="hero-achievements">
-              <p class="hero-achievements-label" data-lang="achievements-title">Key Achievements</p>
-              <ul class="achievements-list">
-                <li data-lang="achievement-1">Designed inventory system serving 100+ retail stores across 3 device types</li>
-                <li data-lang="achievement-2">Built design system from scratch for B2B distribution platform (10+ modules)</li>
-                <li data-lang="achievement-3">Led end-to-end design across multiple products and teams</li>
-              </ul>
+            <div class="hero-buttons">
+              <a href="/assets/UXUI_designer_ Saikal_Kaparbekova_en.pdf"
+                 class="cv-button"
+                 download
+                 data-lang-href-en="/assets/UXUI_designer_ Saikal_Kaparbekova_en.pdf"
+                 data-lang-href-ru="/assets/UXUI_designer_ Saikal_Kaparbekova_ru.pdf">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+                <span data-lang="download-cv-btn">Download CV</span>
+              </a>
+              <a href="#portfolio" class="view-projects-btn">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/></svg>
+                <span data-lang="view-projects-btn">View Projects</span>
+              </a>
             </div>
-
-            <a href="/assets/UXUI_designer_ Saikal_Kaparbekova_en.pdf"
-               class="cv-button"
-               download
-               data-lang-href-en="/assets/UXUI_designer_ Saikal_Kaparbekova_en.pdf"
-               data-lang-href-ru="/assets/UXUI_designer_ Saikal_Kaparbekova_ru.pdf">
-              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
-              <span data-lang="download-cv-btn">Download CV</span>
-            </a>
           </div>
-          <!-- Center: Photo -->
-          <div class="hero-photo-wrapper">
-            <img src="/assets/portrait.png" alt="Saikal Kaparbekova" class="hero-photo">
+
+          <!-- Right Side: Tags & Stats -->
+          <div class="hero-tags-block">
+            <div class="hero-tag-group">
+              <span class="hero-tag-group-label">Tools</span>
+              <div class="hero-tags">
+                <span class="hero-tag">Figma</span>
+                <span class="hero-tag">Miro</span>
+                <span class="hero-tag">Jira</span>
+                <span class="hero-tag">VS Code</span>
+                <span class="hero-tag">Git</span>
+                <span class="hero-tag">AI tools</span>
+              </div>
+            </div>
+            <div class="hero-tag-group">
+              <span class="hero-tag-group-label">Products</span>
+              <div class="hero-tags">
+                <span class="hero-tag">B2B SaaS</span>
+                <span class="hero-tag">POS Systems</span>
+                <span class="hero-tag">Distribution</span>
+                <span class="hero-tag">Inventory Management</span>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -72,49 +93,50 @@
     <section class="portfolio" id="portfolio">
       <div class="container">
         <div class="portfolio-cases-container">
-          
 
           <a href="/unitradex-case.html" class="portfolio-case-link">
             <div class="portfolio-case-image">
-              <img src="/assets/b2b-view.png" alt="UniTradex" loading="lazy">
+              <img src="/assets/b2b-view.png" alt="B2B Platform for Distribution" loading="lazy">
             </div>
             <div class="portfolio-case-info">
-              <h3 class="portfolio-case-title" data-lang="unitradex-case-title">UniTradex</h3>
+              <h3 class="portfolio-case-title" data-lang="unitradex-case-title">B2B Platform for Distribution</h3>
               <p class="portfolio-case-description" data-lang="unitradex-case-desc">B2B distribution platform — web app for distributors and mobile app for stores</p>
             </div>
           </a>
 
           <a href="/creatego-case.html" class="portfolio-case-link">
             <div class="portfolio-case-image">
-              <img src="/assets/Creatego.png" alt="CreateGO" loading="lazy">
+              <img src="/assets/Creatego.png" alt="No-code Builder for Designers" loading="lazy">
             </div>
             <div class="portfolio-case-info">
-              <h3 class="portfolio-case-title" data-lang="creatego-case-title">CreateGO</h3>
+              <h3 class="portfolio-case-title" data-lang="creatego-case-title">No-code Builder for Designers</h3>
               <p class="portfolio-case-description" data-lang="creatego-case-desc">No-code builder for designers</p>
             </div>
           </a>
+
           <a href="/yoshop-restaurant-case.html" class="portfolio-case-link">
             <div class="portfolio-case-image">
-              <img src="/assets/yoshop/yoshopCase.png" alt="YoShop" loading="lazy">
+              <img src="/assets/yoshop/yoshopCase.png" alt="POS & Inventory Management System" loading="lazy">
             </div>
             <div class="portfolio-case-info">
-              <h3 class="portfolio-case-title" data-lang="yoshop-case-title">YoShop</h3>
+              <h3 class="portfolio-case-title" data-lang="yoshop-case-title">POS & Inventory Management System</h3>
               <p class="portfolio-case-description" data-lang="yoshop-case-desc">POS and inventory system — retail stores, restaurants, 3 platforms</p>
             </div>
           </a>
+
           <a href="/chocofood-case.html" class="portfolio-case-link">
             <div class="portfolio-case-image">
-              <img src="/assets/choco/Choco-preview.png" alt="ChocoFood" loading="lazy">
+              <img src="/assets/choco/Choco-preview.png" alt="Food Delivery UX Research" loading="lazy">
             </div>
             <div class="portfolio-case-info">
-              <h3 class="portfolio-case-title" data-lang="chocofood-case-title">ChocoFood</h3>
+              <h3 class="portfolio-case-title" data-lang="chocofood-case-title">Food Delivery UX Research</h3>
               <p class="portfolio-case-description" data-lang="chocofood-case-desc">UX research for a food delivery app — interviews, usability tests, CJM</p>
             </div>
           </a>
 
-          <!-- <a href="/g-eon-case.html" class="portfolio-case-link">
+          <a href="/g-eon-case.html" class="portfolio-case-link">
             <div class="portfolio-case-image">
-              <img src="/assets/geon/geon-case.png" alt="G-Eon" loading="lazy">
+              <img src="/assets/geon/geon-case.png" alt="G-Eon Mobile Streaming Platform" loading="lazy">
             </div>
             <div class="portfolio-case-info">
               <h3 class="portfolio-case-title" data-lang="geon-case-title">G-Eon</h3>
@@ -132,85 +154,12 @@
             </div>
           </a>
 
-          <a href="/ronto-tech-case.html" class="portfolio-case-link">
-            <div class="portfolio-case-image">
-              <img src="/assets/Ronto.png" alt="Ronto Tech" loading="lazy">
-            </div>
-            <div class="portfolio-case-info">
-              <h3 class="portfolio-case-title" data-lang="ronto-case-title">Ronto Tech</h3>
-              <p class="portfolio-case-description" data-lang="ronto-case-desc">IT company focused of artificial intelligence, blockchain, and virtual reality</p>
-            </div>
-          </a> -->
-
         </div>
       </div>
     </section>
 
     <!-- Experience Section -->
-    <section class="experience-section">
-      <div class="container">
-        <h2 class="experience-section-title" data-lang="experience-title">Experience</h2>
-        <div class="experience-list">
-
-          <div class="experience-item">
-            <div class="experience-meta">
-              <span class="experience-period" data-lang="exp-1-period">2024 — Present</span>
-            </div>
-            <div class="experience-content">
-              <p class="experience-company-role">
-                <span class="experience-company" data-lang="exp-1-company">Codexplore</span>
-                <span class="experience-dash">—</span>
-                <span class="experience-role" data-lang="exp-1-role">UX/UI Designer</span>
-              </p>
-              <p class="experience-desc" data-lang="exp-1-desc">B2B distribution platform</p>
-            </div>
-          </div>
-
-          <div class="experience-item">
-            <div class="experience-meta">
-              <span class="experience-period" data-lang="exp-2-period">2023 — 2024</span>
-            </div>
-            <div class="experience-content">
-              <p class="experience-company-role">
-                <span class="experience-company" data-lang="exp-2-company">Freelance</span>
-                <span class="experience-dash">—</span>
-                <span class="experience-role" data-lang="exp-2-role">UX/UI Designer</span>
-              </p>
-              <p class="experience-desc" data-lang="exp-2-desc">Corporate websites and e-commerce</p>
-            </div>
-          </div>
-
-          <div class="experience-item">
-            <div class="experience-meta">
-              <span class="experience-period" data-lang="exp-3-period">2022 — 2023</span>
-            </div>
-            <div class="experience-content">
-              <p class="experience-company-role">
-                <span class="experience-company" data-lang="exp-3-company">Finenex</span>
-                <span class="experience-dash">—</span>
-                <span class="experience-role" data-lang="exp-3-role">UX/UI Designer</span>
-              </p>
-              <p class="experience-desc" data-lang="exp-3-desc">Inventory management, POS systems</p>
-            </div>
-          </div>
-
-          <div class="experience-item">
-            <div class="experience-meta">
-              <span class="experience-period" data-lang="exp-4-period">2019 — 2022</span>
-            </div>
-            <div class="experience-content">
-              <p class="experience-company-role">
-                <span class="experience-company" data-lang="exp-4-company">Various companies</span>
-                <span class="experience-dash">—</span>
-                <span class="experience-role" data-lang="exp-4-role">Front-End Developer</span>
-              </p>
-              <p class="experience-desc" data-lang="exp-4-desc">SaaS, fintech, banking products</p>
-            </div>
-          </div>
-
-        </div>
-      </div>
-    </section>
+   
 
   </main>
 
@@ -221,5 +170,3 @@
 </body>
 
 </html>
-
-

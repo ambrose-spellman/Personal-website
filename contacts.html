@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link rel="icon" type="image/png" href="/assets/favicon-96x96.png" sizes="96x96" />
+  <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg" />
+  <link rel="shortcut icon" href="/favicon.ico" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon.png" />
+  <link rel="manifest" href="/site.webmanifest" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,100..900&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="/src/styles/normalize.css" />
+  <link rel="stylesheet" href="/src/styles/grid.css" />
+  <link rel="stylesheet" href="/src/styles/style.css" />
+
+  <title data-lang="contacts-page-title">Contacts — Saikal Kaparbekova</title>
+</head>
+
+<body>
+  {{> header}}
+
+  <main>
+    <section class="contacts-page-section">
+      <div class="container">
+
+        <div class="contacts-page-hero">
+          <p class="contacts-page-eyebrow">Get in touch</p>
+          <h1 class="contacts-page-title" data-lang="footer-title">Get in touc</h1>
+        </div>
+
+        <div class="contacts-page-grid">
+
+          <!-- Email — copy on click, no mailto -->
+          <div class="contact-card copy-button" data-copy-text="kaparbekovasaikal@gmail.com" role="button" tabindex="0">
+            <div class="contact-card-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                <polyline points="22,6 12,13 2,6"/>
+              </svg>
+            </div>
+            <div class="contact-card-content">
+              <p class="contact-card-label">Email</p>
+              <p class="contact-card-value">kaparbekovasaikal@gmail.com</p>
+            </div>
+            <div class="contact-card-arrow">
+              <svg width="16" height="16" viewBox="0 0 49 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M39.5 0L18.5 0C16.9087 0 15.3826 0.632141 14.2574 1.75736C13.1321 2.88258 12.5 4.4087 12.5 6C10.9087 6 9.38258 6.63214 8.25736 7.75736C7.13214 8.88258 6.5 10.4087 6.5 12L6.5 42C6.5 43.5913 7.13214 45.1174 8.25736 46.2426C9.38258 47.3679 10.9087 48 12.5 48H33.5C35.0913 48 36.6174 47.3679 37.7426 46.2426C38.8679 45.1174 39.5 43.5913 39.5 42C41.0913 42 42.6174 41.3679 43.7426 40.2426C44.8679 39.1174 45.5 37.5913 45.5 36V6C45.5 4.4087 44.8679 2.88258 43.7426 1.75736C42.6174 0.632141 41.0913 0 39.5 0V0ZM39.5 39V12C39.5 10.4087 38.8679 8.88258 37.7426 7.75736C36.6174 6.63214 35.0913 6 33.5 6L15.5 6C15.5 5.20435 15.8161 4.44129 16.3787 3.87868C16.9413 3.31607 17.7044 3 18.5 3L39.5 3C40.2957 3 41.0587 3.31607 41.6213 3.87868C42.1839 4.44129 42.5 5.20435 42.5 6V36C42.5 36.7957 42.1839 37.5587 41.6213 38.1213C41.0587 38.6839 40.2957 39 39.5 39ZM9.5 12C9.5 11.2044 9.81607 10.4413 10.3787 9.87868C10.9413 9.31607 11.7044 9 12.5 9L33.5 9C34.2956 9 35.0587 9.31607 35.6213 9.87868C36.1839 10.4413 36.5 11.2044 36.5 12V42C36.5 42.7957 36.1839 43.5587 35.6213 44.1213C35.0587 44.6839 34.2956 45 33.5 45H12.5C11.7044 45 10.9413 44.6839 10.3787 44.1213C9.81607 43.5587 9.5 42.7957 9.5 42L9.5 12Z" fill="currentColor"/>
+              </svg>
+            </div>
+          </div>
+
+          <!-- Telegram -->
+          <a href="https://t.me/ambr0se_spellman" target="_blank" class="contact-card">
+            <div class="contact-card-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="22" y1="2" x2="11" y2="13"/>
+                <polygon points="22 2 15 22 11 13 2 9 22 2"/>
+              </svg>
+            </div>
+            <div class="contact-card-content">
+              <p class="contact-card-label">Telegram</p>
+              <p class="contact-card-value">@ambr0se_spellman</p>
+            </div>
+            <div class="contact-card-arrow">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M7 7h10v10"/></svg>
+            </div>
+          </a>
+
+          <!-- LinkedIn -->
+          <a href="https://www.linkedin.com/in/saikal-kaparbekova-18416313a/" target="_blank" class="contact-card">
+            <div class="contact-card-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
+                <rect x="2" y="9" width="4" height="12"/>
+                <circle cx="4" cy="4" r="2"/>
+              </svg>
+            </div>
+            <div class="contact-card-content">
+              <p class="contact-card-label">LinkedIn</p>
+              <p class="contact-card-value">saikal-kaparbekova</p>
+            </div>
+            <div class="contact-card-arrow">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M7 7h10v10"/></svg>
+            </div>
+          </a>
+
+          <!-- Schedule a call -->
+          <a href="https://calendly.com/kaparbekovasaikal/30min" target="_blank" class="contact-card">
+            <div class="contact-card-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="3" y="4" width="18" height="18" rx="2" ry="2"/>
+                <line x1="16" y1="2" x2="16" y2="6"/>
+                <line x1="8" y1="2" x2="8" y2="6"/>
+                <line x1="3" y1="10" x2="21" y2="10"/>
+              </svg>
+            </div>
+            <div class="contact-card-content">
+              <p class="contact-card-label" data-lang="footer-call-button">Schedule a call</p>
+              <p class="contact-card-value">Calendly · 30 min</p>
+            </div>
+            <div class="contact-card-arrow">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M7 7h10v10"/></svg>
+            </div>
+          </a>
+
+        </div>
+
+        <!-- CV Download -->
+        <div class="contacts-page-cv">
+          <a href="/assets/UXUI_designer_ Saikal_Kaparbekova_en.pdf"
+             class="cv-button"
+             download
+             data-lang-href-en="/assets/UXUI_designer_ Saikal_Kaparbekova_en.pdf"
+             data-lang-href-ru="/assets/UXUI_designer_ Saikal_Kaparbekova_ru.pdf">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+            <span data-lang="download-cv-btn">Download CV</span>
+          </a>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <script type="module" src="/src/js/main.js"></script>
+</body>
+
+</html>

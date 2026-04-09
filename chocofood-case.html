@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="/src/styles/normalize.css" />
     <link rel="stylesheet" href="/src/styles/grid.css" />
     <link rel="stylesheet" href="/src/styles/style.css" />
-    <link rel="stylesheet" href="/src/styles/case.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css">
     <title data-lang="chocofood-page-title">ChocoFood — UX Research Case Study</title>
 </head>
 <body>
@@ -22,7 +22,7 @@
 
     <div class="container">
         <a href="/index.html" class="case-back-link">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5"/><path d="m12 19-7-7 7-7"/></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5"/><path d="m12 19-7-7 7-7"/></svg>
             <span data-lang="case-back">Back to cases</span>
         </a>
 
@@ -64,21 +64,6 @@
                     <p class="team-group-count">People First</p>
                 </div>
             </div>
-            <p class="team-my-role"><span class="team-role-label">My role</span> UX Researcher — research planning, interviewing, analysis, CJM</p>
-        </section>
-
-        <!-- Tools -->
-        <section class="case-tools-team" data-analytics="tools">
-            <div class="case-tools">
-                <h2 class="case-section-title" data-lang="case-tools">Tools</h2>
-                <div class="tool-icons">
-                    <span class="tool-item">In-depth Interviews</span>
-                    <span class="tool-item">Usability Testing</span>
-                    <span class="tool-item">CJM</span>
-                    <span class="tool-item">Figma</span>
-                    <span class="tool-item">Affinity Mapping</span>
-                </div>
-            </div>
         </section>
 
         <!-- Challenge -->
@@ -104,7 +89,7 @@
         <!-- Metrics -->
         <section class="case-metrics-block" data-analytics="metrics">
             <div class="metrics-card">
-                <h2 class="metrics-title" data-lang="case-metrics-results-title">Results</h2>
+                <h2 class="case-description-title" data-lang="case-metrics-results-title">Results</h2>
                 <div class="metrics-grid">
                     <div class="metric-item">
                         <p class="metric-value">10</p>
@@ -137,9 +122,9 @@
         <!-- Design Gallery -->
         <section class="case-gallery" data-analytics="gallery">
             <h2 class="case-gallery-title" data-lang="case-design">Research</h2>
-            <img src="/assets/choco/research1.webp" alt="ChocoFood — research findings" loading="lazy">
-            <img src="/assets/choco/research2.webp" alt="ChocoFood — research analysis" loading="lazy">
-            <img src="/assets/choco/cjm.webp" alt="ChocoFood — customer journey map" loading="lazy">
+            <a class="gallery-item glightbox" href="/assets/choco/research1.webp" data-gallery="choco-gallery"><img src="/assets/choco/research1.webp" alt="ChocoFood — research findings" loading="lazy"></a>
+            <a class="gallery-item glightbox" href="/assets/choco/research2.webp" data-gallery="choco-gallery"><img src="/assets/choco/research2.webp" alt="ChocoFood — research analysis" loading="lazy"></a>
+            <a class="gallery-item glightbox" href="/assets/choco/cjm.webp" data-gallery="choco-gallery"><img src="/assets/choco/cjm.webp" alt="ChocoFood — customer journey map" loading="lazy"></a>
         </section>
 
         <!-- Related Cases -->
@@ -188,5 +173,7 @@
 
     {{> footer}}
     <script type="module" src="/src/js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
+    <script>const lightbox = GLightbox({ selector: '.glightbox' });</script>
 </body>
 </html>
