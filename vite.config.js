@@ -32,6 +32,7 @@ export default defineConfig({
         'chocofood': resolve(__dirname, 'chocofood-case.html'),
         'vixco': resolve(__dirname, 'vixco-case.html'),
         'handmade': resolve(__dirname, 'handmade-page.html'),
+        'contacts': resolve(__dirname, 'contacts.html'),
       },
     },
     minify: 'terser',
