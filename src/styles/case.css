@@ -182,6 +182,16 @@
   margin-bottom: 40px;
 }
 
+.case-gallery--grid4 {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+@media (min-width: 768px) {
+  .case-gallery--grid4 {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
 .case-gallery-title {
   font-size: 1.125rem;
   font-weight: 700;

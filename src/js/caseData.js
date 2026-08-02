@@ -33,7 +33,7 @@ export const cases = {
     role: 'UX Researcher',
   },
   'geon': {
-    title: { en: 'G-Eon', ru: 'G-Eon' },
+    title: { en: 'Live Streaming Platform', ru: 'Платформа для лайв-стриминга' },
     description: { en: 'Mobile streaming platform — live streams, AR, wallet, tournaments', ru: 'Мобильная стриминговая платформа — прямые эфиры, AR, кошелёк, турниры' },
     tags: ['mobile', 'streaming', 'startup', 'AR', 'iOS', 'Android'],
     url: '/g-eon-case.html',

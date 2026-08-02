@@ -433,6 +433,13 @@ body {
   line-height: 1.4;
 }
 
+.hero-industries {
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: var(--chinese-black-500);
+  margin: 0;
+}
+
 .hero-description {
   font-size: 0.9375rem;
   line-height: 1.65;
@@ -512,6 +519,33 @@ body {
   font-size: 0.8125rem;
   font-weight: 500;
   color: var(--chinese-black-700);
+}
+
+.hero-bring-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.hero-bring-item {
+  position: relative;
+  padding-left: 24px;
+  font-size: 0.9375rem;
+  font-weight: 500;
+  line-height: 1.4;
+  color: var(--chinese-black-700);
+}
+
+.hero-bring-item::before {
+  content: "\2192";
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: var(--green-700);
+  font-weight: 700;
 }
 
 /* Stat tags — bigger number + label */
