@@ -40,6 +40,14 @@ export const cases = {
     thumbnail: '/assets/geon/geon-case.png',
     role: 'UX/UI Designer',
   },
+  'ronto-tech': {
+    title: { en: 'Ronto Tech', ru: 'Ronto Tech' },
+    description: { en: 'IT company — AI, blockchain, and AR', ru: 'ИТ компания — ИИ, блокчейн и AR' },
+    tags: ['website', 'startup', 'branding', 'AI', 'blockchain', 'AR'],
+    url: '/ronto-tech-case.html',
+    thumbnail: '/assets/ronto/block-1.jpg',
+    role: 'UX/UI Designer',
+  },
 };
 
 /**
