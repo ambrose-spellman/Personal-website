@@ -79,20 +79,10 @@
 
         <!-- Challenge -->
         <section class="case-description" data-analytics="challenge">
-            <h2 class="case-description-title" data-lang="unitradex-challenge-title">The Challenge</h2>
+            <h2 class="case-description-title" data-lang="unitradex-challenge-title">The Problem</h2>
             <div>
-                <p class="case-description-text" data-lang="unitradex-challenge-text">Distributors and stores needed a platform to manage the full order cycle - from catalog to delivery. The process was fragmented and required many manual operations.</p>
-                <p class="case-description-text" data-lang="unitradex-challenge-complexity" style="margin-top:16px">Multiple user roles (warehouse managers, sales teams, store owners), different devices (desktop for office, mobile for stores), complex business logic (pricing, logistics, partner programs) - all needed to work as one system.</p>
-            </div>
-        </section>
-
-        <!-- Solution -->
-        <section class="case-description" data-analytics="solution">
-            <h2 class="case-description-title" data-lang="unitradex-solution-title">The Solution</h2>
-            <div>
-                <p class="case-description-text" data-lang="unitradex-solution-ownership">As Design Owner I managed all design decisions across 10+ modules and designed user flows for complex business processes across web and mobile.</p>
-                <p class="case-description-text" data-lang="unitradex-solution-flow" style="margin-top:16px">Key solution: a unified order creation flow that simplified the process from product selection to confirmation - accounting for wholesale volumes, special pricing and delivery conditions.</p>
-                <p class="case-description-text" data-lang="unitradex-solution-ds" style="margin-top:16px">Built a scalable design system that ensured consistency across all touchpoints and accelerated development of new features.</p>
+                <p class="case-description-text" data-lang="unitradex-challenge-text">Distributors took orders by phone and tracked them in Excel — errors, confusion, no single history per client. To sell products, sales agents had to physically visit stores — a slow, expensive sales channel.</p>
+                <p class="case-description-text" data-lang="unitradex-challenge-complexity" style="margin-top:16px">Stores, in turn, couldn't see the market as a whole: they only knew the distributors who happened to visit them, with no way to compare offers from other suppliers in their region. The business described this problem qualitatively, based on its own market analysis — a business analyst then turned it into a spec.</p>
             </div>
         </section>
 
@@ -100,7 +90,20 @@
         <section class="case-description" data-analytics="process">
             <h2 class="case-description-title" data-lang="unitradex-process-title">The Process</h2>
             <div>
-                <p class="case-description-text" data-lang="unitradex-process-text">Worked closely with front-end and back-end developers, business analyst and project manager. Conducted competitor benchmarking, gathered feedback from test users, and iterated based on results. Defended design decisions in team meetings and controlled implementation quality.</p>
+                <p class="case-description-text" data-lang="unitradex-process-text">I worked from a ready spec — my job was to design a system for two fundamentally different types of users: distributors and stores. Each had its own dashboard, goals, and staff with different access rights (warehouse, sales, managers). Distributors needed a product catalog and an order funnel; stores needed navigation across multiple distributors' catalogs and order tracking.</p>
+                <p class="case-description-text" data-lang="unitradex-process-defend" style="margin-top:16px">I had to defend decisions along the way — for example, a non-design project lead didn't see the point of a drawer with a translucent half-screen overlay instead of a full page transition. I explained it through cognitive load — two different contexts shouldn't be visible at once — and pointed to W3C standards.</p>
+                <p class="case-description-text" data-lang="unitradex-process-iteration" style="margin-top:16px">The first version of order display was just a table. User testing showed one format wasn't enough — some preferred a kanban board, others a table, others a list. We ended up adding three display formats for orders and clients and let users choose.</p>
+                <p class="case-description-text" data-lang="unitradex-process-tools" style="margin-top:16px">Since the frontend was built in React and design had to keep pace with development, we based our design system on Ant Design and customized components on top of it — giving us speed and consistency across 10+ modules.</p>
+            </div>
+        </section>
+
+        <!-- Solution -->
+        <section class="case-description" data-analytics="solution">
+            <h2 class="case-description-title" data-lang="unitradex-solution-title">The Solution</h2>
+            <div>
+                <p class="case-description-text" data-lang="unitradex-solution-ownership">I designed a system of 10+ modules for two user types as one unified platform: separate dashboards, role-based access for staff, a catalog and order funnel for distributors, catalog navigation and order tracking for stores.</p>
+                <p class="case-description-text" data-lang="unitradex-solution-flow" style="margin-top:16px">The key decision was a single order view showing the whole path from warehouse to delivery, with no need to switch between screens.</p>
+                <p class="case-description-text" data-lang="unitradex-solution-ds" style="margin-top:16px">Flexible data display formats — table, kanban, list — to match different user work patterns.</p>
             </div>
         </section>
 
