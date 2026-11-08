@@ -1,5 +1,13 @@
 // Case study data with tags for related cases linking
 export const cases = {
+  'unitradex': {
+    title: { en: 'UniTradex', ru: 'UniTradex' },
+    description: { en: 'B2B distribution platform — full cycle from order to delivery', ru: 'B2B платформа дистрибуции — полный цикл от заказа до доставки' },
+    tags: ['B2B', 'distribution', 'web-app', 'mobile'],
+    url: '/unitradex-case.html',
+    thumbnail: '/assets/unitradex/dashboard2.png',
+    role: 'UX/UI Designer',
+  },
   'creatego': {
     title: { en: 'CreateGO', ru: 'CreateGO' },
     description: { en: 'No-code builder for designers', ru: 'No-code конструктор для дизайнеров' },
